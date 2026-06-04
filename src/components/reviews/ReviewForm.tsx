@@ -88,7 +88,7 @@ export default function ReviewForm({ onSuccess }: { onSuccess?: () => void }) {
               label: d.name, 
               subLabel: (d as any).categories?.name || d.category_id
             }))}
-            value={form.dish_id}
+            value={form.dish_id || ''}
             onChange={(val) => setForm({ ...form, dish_id: val })}
             placeholder="Select a dish..."
             emptyText="No dishes found"
