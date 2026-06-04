@@ -1,26 +1,304 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ============================================================
+   Prinsa Café — Design System
+   ============================================================ */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* --- Color Palette --- */
+  --color-coffee-50: #FAF5F0;
+  --color-coffee-100: #F0E6D9;
+  --color-coffee-200: #E0CBB0;
+  --color-coffee-300: #C9A87C;
+  --color-coffee-400: #A57D50;
+  --color-coffee-500: #7A5530;
+  --color-coffee-600: #5C3D20;
+  --color-coffee-700: #4A2C2A;
+  --color-coffee-800: #3A2218;
+  --color-coffee-900: #2A1610;
+  --color-coffee-950: #1A0E08;
+
+  --color-burgundy-50: #FDF2F4;
+  --color-burgundy-100: #FCE7EB;
+  --color-burgundy-200: #F9D0D8;
+  --color-burgundy-300: #F3A8B8;
+  --color-burgundy-400: #EA7592;
+  --color-burgundy-500: #DD456D;
+  --color-burgundy-600: #C92755;
+  --color-burgundy-700: #A91D45;
+  --color-burgundy-800: #800020;
+  --color-burgundy-900: #5C0018;
+  --color-burgundy-950: #3D0010;
+
+  --color-cream: #FFF8F0;
+  --color-cream-dark: #F5EDE3;
+  --color-cream-light: #FFFCF8;
+
+  --color-gold-50: #FDF9EB;
+  --color-gold-100: #FAF0CC;
+  --color-gold-200: #F5E099;
+  --color-gold-300: #EBCA5D;
+  --color-gold-400: #C9A84C;
+  --color-gold-500: #B8943A;
+  --color-gold-600: #9A7A2E;
+  --color-gold-700: #7A5F24;
+  --color-gold-800: #5A451A;
+  --color-gold-900: #3A2D11;
+
+  --color-dark: #1A1110;
+  --color-dark-lighter: #2A1F1E;
+  --color-dark-card: #332625;
+
+  --color-warm-gray: #A89B91;
+  --color-warm-gray-light: #D4CBC3;
+
+  /* --- Fonts --- */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  /* --- Animations --- */
+  --animate-fade-in: fadeIn 0.6s ease-out;
+  --animate-slide-up: slideUp 0.6s ease-out;
+  --animate-float: float 3s ease-in-out infinite;
+  --animate-pulse-soft: pulseSoft 2s ease-in-out infinite;
+  --animate-shimmer: shimmer 2s infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* --- Keyframes --- */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulseSoft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ============================================================
+   Global Styles
+   ============================================================ */
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-coffee-800);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-burgundy-800);
+  color: white;
+}
+
+/* ============================================================
+   Scrollbar Styling
+   ============================================================ */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-coffee-300);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-coffee-500);
+}
+
+/* ============================================================
+   Typography
+   ============================================================ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-coffee-800);
+  line-height: 1.2;
+}
+
+/* ============================================================
+   Utility Classes
+   ============================================================ */
+
+/* Glassmorphism */
+.glass {
+  background: rgba(255, 248, 240, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 248, 240, 0.3);
+}
+
+.glass-dark {
+  background: rgba(26, 17, 16, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Gold gradient text */
+.text-gradient-gold {
+  background: linear-gradient(135deg, var(--color-gold-400), var(--color-gold-300), var(--color-gold-500));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Gold decorative line */
+.gold-line {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-gold-400), var(--color-gold-300));
+  border-radius: 2px;
+}
+
+/* Shimmer loading skeleton */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--color-cream-dark) 25%,
+    var(--color-cream) 50%,
+    var(--color-cream-dark) 75%
+  );
+  background-size: 400% 100%;
+  animation: var(--animate-shimmer);
+}
+
+/* Veg/Non-Veg badge */
+.badge-veg {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-veg--green {
+  background-color: #E8F5E9;
+  color: #2E7D32;
+  border: 1px solid #A5D6A7;
+}
+
+.badge-veg--red {
+  background-color: #FFEBEE;
+  color: #C62828;
+  border: 1px solid #EF9A9A;
+}
+
+/* Hero overlay gradient */
+.hero-gradient {
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 17, 16, 0.7) 0%,
+    rgba(26, 17, 16, 0.4) 40%,
+    rgba(26, 17, 16, 0.6) 70%,
+    rgba(26, 17, 16, 0.9) 100%
+  );
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(74, 44, 42, 0.12);
+}
+
+/* Section divider */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-gold-400),
+    transparent
+  );
+}
+
+/* Masonry layout */
+.masonry {
+  columns: 1;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .masonry {
+    columns: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry {
+    columns: 3;
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 16px;
+}
+
+/* WhatsApp button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 50;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 28px rgba(37, 211, 102, 0.5);
+}
+
+/* Admin panel */
+.admin-sidebar {
+  width: 260px;
+  min-height: calc(100vh - 64px);
+}
+
+@media (max-width: 768px) {
+  .admin-sidebar {
+    width: 100%;
+    min-height: auto;
+  }
 }

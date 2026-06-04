@@ -1,0 +1,938 @@
+[
+  {
+    "id": 1,
+    "category": "Breakfast",
+    "name": "Classic Breakfast Set",
+    "price": 265,
+    "description": "A delicious classic breakfast set freshly prepared by our chefs, served as part of our breakfast selection.",
+    "image": "/images/menu/classic-breakfast-set.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 2,
+    "category": "Breakfast",
+    "name": "The Full Monthly",
+    "price": 285,
+    "description": "A delicious the full monthly freshly prepared by our chefs, served as part of our breakfast selection.",
+    "image": "/images/menu/the-full-monthly.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 3,
+    "category": "Breakfast",
+    "name": "Sunrise Skillet",
+    "price": 225,
+    "description": "A delicious sunrise skillet freshly prepared by our chefs, served as part of our breakfast selection.",
+    "image": "/images/menu/sunrise-skillet.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 4,
+    "category": "Breakfast",
+    "name": "French Toast Stuff Cheese With Honey",
+    "price": 220,
+    "description": "A delicious french toast stuff cheese with honey freshly prepared by our chefs, served as part of our breakfast selection.",
+    "image": "/images/menu/french-toast-stuff-cheese-with-honey.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 5,
+    "category": "Breakfast",
+    "name": "Hash Brown Potatoes and Chicken Bacon",
+    "price": 220,
+    "description": "A delicious hash brown potatoes and chicken bacon freshly prepared by our chefs, served as part of our breakfast selection.",
+    "image": "/images/menu/hash-brown-potatoes-and-chicken-bacon.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 6,
+    "category": "Breakfast",
+    "name": "Spanish Frittata",
+    "price": 225,
+    "description": "A delicious spanish frittata freshly prepared by our chefs, served as part of our breakfast selection.",
+    "image": "/images/menu/spanish-frittata.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 7,
+    "category": "Breakfast",
+    "name": "French Toast With Honey",
+    "price": 185,
+    "description": "A delicious french toast with honey freshly prepared by our chefs, served as part of our breakfast selection.",
+    "image": "/images/menu/french-toast-with-honey.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 8,
+    "category": "Breakfast",
+    "name": "Hot Dog Chicken",
+    "price": 210,
+    "description": "A delicious hot dog chicken freshly prepared by our chefs, served as part of our breakfast selection.",
+    "image": "/images/menu/hot-dog-chicken.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 9,
+    "category": "Breakfast",
+    "name": "Hot Dog Mutton",
+    "price": 230,
+    "description": "A delicious hot dog mutton freshly prepared by our chefs, served as part of our breakfast selection.",
+    "image": "/images/menu/hot-dog-mutton.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 10,
+    "category": "Breakfast",
+    "name": "Porridge/Muesli With Hot Milk",
+    "price": 200,
+    "description": "A delicious porridge/muesli with hot milk freshly prepared by our chefs, served as part of our breakfast selection.",
+    "image": "/images/menu/porridge-muesli-with-hot-milk.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 11,
+    "category": "Breakfast",
+    "name": "Plain Toast With Butter Jam",
+    "price": 140,
+    "description": "A delicious plain toast with butter jam freshly prepared by our chefs, served as part of our breakfast selection.",
+    "image": "/images/menu/plain-toast-with-butter-jam.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 12,
+    "category": "Breakfast",
+    "name": "Egg Boiled",
+    "price": 80,
+    "description": "A delicious egg boiled freshly prepared by our chefs, served as part of our breakfast selection.",
+    "image": "/images/menu/egg-boiled.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 13,
+    "category": "Breakfast",
+    "name": "Egg Scramble",
+    "price": 90,
+    "description": "A delicious egg scramble freshly prepared by our chefs, served as part of our breakfast selection.",
+    "image": "/images/menu/egg-scramble.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 14,
+    "category": "Breakfast",
+    "name": "Egg Poached",
+    "price": 80,
+    "description": "A delicious egg poached freshly prepared by our chefs, served as part of our breakfast selection.",
+    "image": "/images/menu/egg-poached.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 15,
+    "category": "Breakfast",
+    "name": "Sunny Side Up",
+    "price": 75,
+    "description": "A delicious sunny side up freshly prepared by our chefs, served as part of our breakfast selection.",
+    "image": "/images/menu/sunny-side-up.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 16,
+    "category": "Breakfast",
+    "name": "Plain Omelet",
+    "price": 90,
+    "description": "A delicious plain omelet freshly prepared by our chefs, served as part of our breakfast selection.",
+    "image": "/images/menu/plain-omelet.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 17,
+    "category": "Breakfast",
+    "name": "Masala Omelet",
+    "price": 110,
+    "description": "A delicious masala omelet freshly prepared by our chefs, served as part of our breakfast selection.",
+    "image": "/images/menu/masala-omelet.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 18,
+    "category": "Pasta",
+    "name": "Nepolitana Veg",
+    "price": 220,
+    "description": "A delicious nepolitana veg freshly prepared by our chefs, served as part of our pasta selection.",
+    "image": "/images/menu/nepolitana-veg.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 19,
+    "category": "Pasta",
+    "name": "Marinara",
+    "price": 240,
+    "description": "A delicious marinara freshly prepared by our chefs, served as part of our pasta selection.",
+    "image": "/images/menu/marinara.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 20,
+    "category": "Pasta",
+    "name": "Gambery",
+    "price": 280,
+    "description": "A delicious gambery freshly prepared by our chefs, served as part of our pasta selection.",
+    "image": "/images/menu/gambery.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 21,
+    "category": "Pasta",
+    "name": "Alfredo Veg",
+    "price": 230,
+    "description": "A delicious alfredo veg freshly prepared by our chefs, served as part of our pasta selection.",
+    "image": "/images/menu/alfredo-veg.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 22,
+    "category": "Pasta",
+    "name": "Mama Mia Veg",
+    "price": 250,
+    "description": "A delicious mama mia veg freshly prepared by our chefs, served as part of our pasta selection.",
+    "image": "/images/menu/mama-mia-veg.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 23,
+    "category": "Pasta",
+    "name": "Carbonara",
+    "price": 270,
+    "description": "A delicious carbonara freshly prepared by our chefs, served as part of our pasta selection.",
+    "image": "/images/menu/carbonara.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 24,
+    "category": "Pasta",
+    "name": "Arrabbiata Veg",
+    "price": 240,
+    "description": "A delicious arrabbiata veg freshly prepared by our chefs, served as part of our pasta selection.",
+    "image": "/images/menu/arrabbiata-veg.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 25,
+    "category": "Pasta",
+    "name": "Bolognese",
+    "price": 270,
+    "description": "A delicious bolognese freshly prepared by our chefs, served as part of our pasta selection.",
+    "image": "/images/menu/bolognese.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 26,
+    "category": "Pizza",
+    "name": "Chicken Pizza",
+    "price": 350,
+    "description": "A delicious chicken pizza freshly prepared by our chefs, served as part of our pizza selection.",
+    "image": "/images/menu/chicken-pizza.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 27,
+    "category": "Pizza",
+    "name": "Veg Pizza",
+    "price": 340,
+    "description": "A delicious veg pizza freshly prepared by our chefs, served as part of our pizza selection.",
+    "image": "/images/menu/veg-pizza.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 28,
+    "category": "Pizza",
+    "name": "Cheese Pizza",
+    "price": 280,
+    "description": "A delicious cheese pizza freshly prepared by our chefs, served as part of our pizza selection.",
+    "image": "/images/menu/cheese-pizza.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 29,
+    "category": "Pizza",
+    "name": "Hawaiian Pizza",
+    "price": 350,
+    "description": "A delicious hawaiian pizza freshly prepared by our chefs, served as part of our pizza selection.",
+    "image": "/images/menu/hawaiian-pizza.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 30,
+    "category": "Pizza",
+    "name": "Margherita Pizza",
+    "price": 340,
+    "description": "A delicious margherita pizza freshly prepared by our chefs, served as part of our pizza selection.",
+    "image": "/images/menu/margherita-pizza.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 31,
+    "category": "Pizza",
+    "name": "Classic Pizza",
+    "price": 350,
+    "description": "A delicious classic pizza freshly prepared by our chefs, served as part of our pizza selection.",
+    "image": "/images/menu/classic-pizza.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 32,
+    "category": "Pizza",
+    "name": "Mushroom Pizza",
+    "price": 340,
+    "description": "A delicious mushroom pizza freshly prepared by our chefs, served as part of our pizza selection.",
+    "image": "/images/menu/mushroom-pizza.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 33,
+    "category": "Pizza",
+    "name": "Sausage Pizza",
+    "price": 350,
+    "description": "A delicious sausage pizza freshly prepared by our chefs, served as part of our pizza selection.",
+    "image": "/images/menu/sausage-pizza.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 34,
+    "category": "Pizza",
+    "name": "Prinsa Special Pizza",
+    "price": 415,
+    "description": "A delicious prinsa special pizza freshly prepared by our chefs, served as part of our pizza selection.",
+    "image": "/images/menu/prinsa-special-pizza.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 35,
+    "category": "Burger",
+    "name": "Chicken and Cheese Burger",
+    "price": 200,
+    "description": "A delicious chicken and cheese burger freshly prepared by our chefs, served as part of our burger selection.",
+    "image": "/images/menu/chicken-and-cheese-burger.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 36,
+    "category": "Burger",
+    "name": "Egg and Cheese Burger",
+    "price": 180,
+    "description": "A delicious egg and cheese burger freshly prepared by our chefs, served as part of our burger selection.",
+    "image": "/images/menu/egg-and-cheese-burger.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 37,
+    "category": "Burger",
+    "name": "Mutton and Cheese Burger",
+    "price": 240,
+    "description": "A delicious mutton and cheese burger freshly prepared by our chefs, served as part of our burger selection.",
+    "image": "/images/menu/mutton-and-cheese-burger.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 38,
+    "category": "Burger",
+    "name": "Veg and Cheese Burger",
+    "price": 190,
+    "description": "A delicious veg and cheese burger freshly prepared by our chefs, served as part of our burger selection.",
+    "image": "/images/menu/veg-and-cheese-burger.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 39,
+    "category": "Burger",
+    "name": "Chicken Smash Burger",
+    "price": 220,
+    "description": "A delicious chicken smash burger freshly prepared by our chefs, served as part of our burger selection.",
+    "image": "/images/menu/chicken-smash-burger.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 40,
+    "category": "Burger",
+    "name": "Fish and Cheese Burger",
+    "price": 230,
+    "description": "A delicious fish and cheese burger freshly prepared by our chefs, served as part of our burger selection.",
+    "image": "/images/menu/fish-and-cheese-burger.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 41,
+    "category": "Burger",
+    "name": "Prinsa Special Burger",
+    "price": 260,
+    "description": "A delicious prinsa special burger freshly prepared by our chefs, served as part of our burger selection.",
+    "image": "/images/menu/prinsa-special-burger.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 42,
+    "category": "Sandwich",
+    "name": "Chicken and Cheese Sandwich",
+    "price": 185,
+    "description": "A delicious chicken and cheese sandwich freshly prepared by our chefs, served as part of our sandwich selection.",
+    "image": "/images/menu/chicken-and-cheese-sandwich.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 43,
+    "category": "Sandwich",
+    "name": "Egg and Cheese Sandwich",
+    "price": 180,
+    "description": "A delicious egg and cheese sandwich freshly prepared by our chefs, served as part of our sandwich selection.",
+    "image": "/images/menu/egg-and-cheese-sandwich.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 44,
+    "category": "Sandwich",
+    "name": "Veg and Cheese Sandwich",
+    "price": 190,
+    "description": "A delicious veg and cheese sandwich freshly prepared by our chefs, served as part of our sandwich selection.",
+    "image": "/images/menu/veg-and-cheese-sandwich.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 45,
+    "category": "Sandwich",
+    "name": "Tuna and Cheese Sandwich",
+    "price": 180,
+    "description": "A delicious tuna and cheese sandwich freshly prepared by our chefs, served as part of our sandwich selection.",
+    "image": "/images/menu/tuna-and-cheese-sandwich.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 46,
+    "category": "Sandwich",
+    "name": "Ham Chicken and Cheese Sandwich",
+    "price": 180,
+    "description": "A delicious ham chicken and cheese sandwich freshly prepared by our chefs, served as part of our sandwich selection.",
+    "image": "/images/menu/ham-chicken-and-cheese-sandwich.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 47,
+    "category": "Sandwich",
+    "name": "Prinsa Special Club Sandwich",
+    "price": 240,
+    "description": "A delicious prinsa special club sandwich freshly prepared by our chefs, served as part of our sandwich selection.",
+    "image": "/images/menu/prinsa-special-club-sandwich.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 48,
+    "category": "Fry Rice",
+    "name": "Chicken Fry Rice",
+    "price": 220,
+    "description": "A delicious chicken fry rice freshly prepared by our chefs, served as part of our fry rice selection.",
+    "image": "/images/menu/chicken-fry-rice.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 49,
+    "category": "Fry Rice",
+    "name": "Egg Fry Rice",
+    "price": 210,
+    "description": "A delicious egg fry rice freshly prepared by our chefs, served as part of our fry rice selection.",
+    "image": "/images/menu/egg-fry-rice.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 50,
+    "category": "Fry Rice",
+    "name": "Veg Fry Rice",
+    "price": 190,
+    "description": "A delicious veg fry rice freshly prepared by our chefs, served as part of our fry rice selection.",
+    "image": "/images/menu/veg-fry-rice.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 51,
+    "category": "Fry Rice",
+    "name": "Mushroom Fry Rice",
+    "price": 220,
+    "description": "A delicious mushroom fry rice freshly prepared by our chefs, served as part of our fry rice selection.",
+    "image": "/images/menu/mushroom-fry-rice.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 52,
+    "category": "Fry Rice",
+    "name": "Mutton Fry Rice",
+    "price": 245,
+    "description": "A delicious mutton fry rice freshly prepared by our chefs, served as part of our fry rice selection.",
+    "image": "/images/menu/mutton-fry-rice.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 53,
+    "category": "Fry Rice",
+    "name": "Mix Fry Rice",
+    "price": 255,
+    "description": "A delicious mix fry rice freshly prepared by our chefs, served as part of our fry rice selection.",
+    "image": "/images/menu/mix-fry-rice.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 54,
+    "category": "Noodles",
+    "name": "Chicken Noodles",
+    "price": 225,
+    "description": "A delicious chicken noodles freshly prepared by our chefs, served as part of our noodles selection.",
+    "image": "/images/menu/chicken-noodles.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 55,
+    "category": "Noodles",
+    "name": "Mutton Noodles",
+    "price": 250,
+    "description": "A delicious mutton noodles freshly prepared by our chefs, served as part of our noodles selection.",
+    "image": "/images/menu/mutton-noodles.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 56,
+    "category": "Noodles",
+    "name": "Veg Noodles",
+    "price": 200,
+    "description": "A delicious veg noodles freshly prepared by our chefs, served as part of our noodles selection.",
+    "image": "/images/menu/veg-noodles.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 57,
+    "category": "Noodles",
+    "name": "Egg Noodles",
+    "price": 215,
+    "description": "A delicious egg noodles freshly prepared by our chefs, served as part of our noodles selection.",
+    "image": "/images/menu/egg-noodles.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 58,
+    "category": "Noodles",
+    "name": "Chicken Keema Noodles",
+    "price": 235,
+    "description": "A delicious chicken keema noodles freshly prepared by our chefs, served as part of our noodles selection.",
+    "image": "/images/menu/chicken-keema-noodles.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 59,
+    "category": "Noodles",
+    "name": "Mutton Keema Noodles",
+    "price": 265,
+    "description": "A delicious mutton keema noodles freshly prepared by our chefs, served as part of our noodles selection.",
+    "image": "/images/menu/mutton-keema-noodles.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 60,
+    "category": "Momo",
+    "name": "Chicken Steam Momo",
+    "price": 150,
+    "description": "A delicious chicken steam momo freshly prepared by our chefs, served as part of our momo selection.",
+    "image": "/images/menu/chicken-steam-momo.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 61,
+    "category": "Momo",
+    "name": "Chicken Soup Momo",
+    "price": 155,
+    "description": "A delicious chicken soup momo freshly prepared by our chefs, served as part of our momo selection.",
+    "image": "/images/menu/chicken-soup-momo.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 62,
+    "category": "Momo",
+    "name": "Chicken Chilly Momo",
+    "price": 170,
+    "description": "A delicious chicken chilly momo freshly prepared by our chefs, served as part of our momo selection.",
+    "image": "/images/menu/chicken-chilly-momo.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 63,
+    "category": "Momo",
+    "name": "Chicken Kothey Momo",
+    "price": 165,
+    "description": "A delicious chicken kothey momo freshly prepared by our chefs, served as part of our momo selection.",
+    "image": "/images/menu/chicken-kothey-momo.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 64,
+    "category": "Momo",
+    "name": "Chicken Fried Momo",
+    "price": 180,
+    "description": "A delicious chicken fried momo freshly prepared by our chefs, served as part of our momo selection.",
+    "image": "/images/menu/chicken-fried-momo.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 65,
+    "category": "Momo",
+    "name": "Veg Steam Momo",
+    "price": 140,
+    "description": "A delicious veg steam momo freshly prepared by our chefs, served as part of our momo selection.",
+    "image": "/images/menu/veg-steam-momo.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 66,
+    "category": "Momo",
+    "name": "Veg Soup Momo",
+    "price": 150,
+    "description": "A delicious veg soup momo freshly prepared by our chefs, served as part of our momo selection.",
+    "image": "/images/menu/veg-soup-momo.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 67,
+    "category": "Momo",
+    "name": "Veg Chilly Momo",
+    "price": 160,
+    "description": "A delicious veg chilly momo freshly prepared by our chefs, served as part of our momo selection.",
+    "image": "/images/menu/veg-chilly-momo.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 68,
+    "category": "Momo",
+    "name": "Veg Kothey Momo",
+    "price": 155,
+    "description": "A delicious veg kothey momo freshly prepared by our chefs, served as part of our momo selection.",
+    "image": "/images/menu/veg-kothey-momo.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 69,
+    "category": "Momo",
+    "name": "Veg Fried Momo",
+    "price": 170,
+    "description": "A delicious veg fried momo freshly prepared by our chefs, served as part of our momo selection.",
+    "image": "/images/menu/veg-fried-momo.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 70,
+    "category": "Grilled",
+    "name": "Grilled Chicken",
+    "price": 370,
+    "description": "A delicious grilled chicken freshly prepared by our chefs, served as part of our grilled selection.",
+    "image": "/images/menu/grilled-chicken.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 71,
+    "category": "Grilled",
+    "name": "Pork Chop",
+    "price": 390,
+    "description": "A delicious pork chop freshly prepared by our chefs, served as part of our grilled selection.",
+    "image": "/images/menu/pork-chop.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 72,
+    "category": "Grilled",
+    "name": "Grilled Fish",
+    "price": 380,
+    "description": "A delicious grilled fish freshly prepared by our chefs, served as part of our grilled selection.",
+    "image": "/images/menu/grilled-fish.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 73,
+    "category": "Grilled",
+    "name": "Grilled Veg",
+    "price": 320,
+    "description": "A delicious grilled veg freshly prepared by our chefs, served as part of our grilled selection.",
+    "image": "/images/menu/grilled-veg.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 74,
+    "category": "Grilled",
+    "name": "Grilled Prawns",
+    "price": 480,
+    "description": "A delicious grilled prawns freshly prepared by our chefs, served as part of our grilled selection.",
+    "image": "/images/menu/grilled-prawns.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 75,
+    "category": "Grilled",
+    "name": "Mutton Steak",
+    "price": 560,
+    "description": "A delicious mutton steak freshly prepared by our chefs, served as part of our grilled selection.",
+    "image": "/images/menu/mutton-steak.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 76,
+    "category": "Grilled",
+    "name": "Prinsa Special Mix Grilled",
+    "price": 695,
+    "description": "A delicious prinsa special mix grilled freshly prepared by our chefs, served as part of our grilled selection.",
+    "image": "/images/menu/prinsa-special-mix-grilled.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 77,
+    "category": "Sizzler",
+    "name": "Chicken Sizzler",
+    "price": 430,
+    "description": "A delicious chicken sizzler freshly prepared by our chefs, served as part of our sizzler selection.",
+    "image": "/images/menu/chicken-sizzler.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 78,
+    "category": "Sizzler",
+    "name": "Veg Sizzler",
+    "price": 390,
+    "description": "A delicious veg sizzler freshly prepared by our chefs, served as part of our sizzler selection.",
+    "image": "/images/menu/veg-sizzler.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 79,
+    "category": "Sizzler",
+    "name": "Fish Sizzler",
+    "price": 430,
+    "description": "A delicious fish sizzler freshly prepared by our chefs, served as part of our sizzler selection.",
+    "image": "/images/menu/fish-sizzler.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 80,
+    "category": "Sizzler",
+    "name": "Mutton Sizzler",
+    "price": 590,
+    "description": "A delicious mutton sizzler freshly prepared by our chefs, served as part of our sizzler selection.",
+    "image": "/images/menu/mutton-sizzler.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 81,
+    "category": "Sizzler",
+    "name": "Pork Sizzler",
+    "price": 460,
+    "description": "A delicious pork sizzler freshly prepared by our chefs, served as part of our sizzler selection.",
+    "image": "/images/menu/pork-sizzler.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 82,
+    "category": "Salad",
+    "name": "Chicken Caesar Salad",
+    "price": 195,
+    "description": "A delicious chicken caesar salad freshly prepared by our chefs, served as part of our salad selection.",
+    "image": "/images/menu/chicken-caesar-salad.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 83,
+    "category": "Salad",
+    "name": "Greek Salad",
+    "price": 195,
+    "description": "A delicious greek salad freshly prepared by our chefs, served as part of our salad selection.",
+    "image": "/images/menu/greek-salad.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 84,
+    "category": "Salad",
+    "name": "Green Salad",
+    "price": 150,
+    "description": "A delicious green salad freshly prepared by our chefs, served as part of our salad selection.",
+    "image": "/images/menu/green-salad.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 85,
+    "category": "Salad",
+    "name": "Waldorf Salad",
+    "price": 220,
+    "description": "A delicious waldorf salad freshly prepared by our chefs, served as part of our salad selection.",
+    "image": "/images/menu/waldorf-salad.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 86,
+    "category": "Salad",
+    "name": "Chicken Salad",
+    "price": 220,
+    "description": "A delicious chicken salad freshly prepared by our chefs, served as part of our salad selection.",
+    "image": "/images/menu/chicken-salad.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 87,
+    "category": "Salad",
+    "name": "Veg Salad",
+    "price": 195,
+    "description": "A delicious veg salad freshly prepared by our chefs, served as part of our salad selection.",
+    "image": "/images/menu/veg-salad.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 88,
+    "category": "Soup",
+    "name": "Hot and Sour Soup Veg",
+    "price": 160,
+    "description": "A delicious hot and sour soup veg freshly prepared by our chefs, served as part of our soup selection.",
+    "image": "/images/menu/hot-and-sour-soup-veg.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 89,
+    "category": "Soup",
+    "name": "Hot and Sour Soup Non Veg",
+    "price": 170,
+    "description": "A delicious hot and sour soup non veg freshly prepared by our chefs, served as part of our soup selection.",
+    "image": "/images/menu/hot-and-sour-soup-non-veg.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 90,
+    "category": "Soup",
+    "name": "Minestrone Soup Veg",
+    "price": 165,
+    "description": "A delicious minestrone soup veg freshly prepared by our chefs, served as part of our soup selection.",
+    "image": "/images/menu/minestrone-soup-veg.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 91,
+    "category": "Soup",
+    "name": "Minestrone Soup Non Veg",
+    "price": 180,
+    "description": "A delicious minestrone soup non veg freshly prepared by our chefs, served as part of our soup selection.",
+    "image": "/images/menu/minestrone-soup-non-veg.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 92,
+    "category": "Soup",
+    "name": "Manchow Soup Veg",
+    "price": 150,
+    "description": "A delicious manchow soup veg freshly prepared by our chefs, served as part of our soup selection.",
+    "image": "/images/menu/manchow-soup-veg.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 93,
+    "category": "Soup",
+    "name": "Manchow Soup Non Veg",
+    "price": 165,
+    "description": "A delicious manchow soup non veg freshly prepared by our chefs, served as part of our soup selection.",
+    "image": "/images/menu/manchow-soup-non-veg.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 94,
+    "category": "Thukpa",
+    "name": "Chicken Thukpa",
+    "price": 230,
+    "description": "A delicious chicken thukpa freshly prepared by our chefs, served as part of our thukpa selection.",
+    "image": "/images/menu/chicken-thukpa.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 95,
+    "category": "Thukpa",
+    "name": "Mutton Thukpa",
+    "price": 265,
+    "description": "A delicious mutton thukpa freshly prepared by our chefs, served as part of our thukpa selection.",
+    "image": "/images/menu/mutton-thukpa.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 96,
+    "category": "Thukpa",
+    "name": "Veg Thukpa",
+    "price": 215,
+    "description": "A delicious veg thukpa freshly prepared by our chefs, served as part of our thukpa selection.",
+    "image": "/images/menu/veg-thukpa.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 97,
+    "category": "Thukpa",
+    "name": "Pork Thukpa",
+    "price": 240,
+    "description": "A delicious pork thukpa freshly prepared by our chefs, served as part of our thukpa selection.",
+    "image": "/images/menu/pork-thukpa.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 98,
+    "category": "Thukpa",
+    "name": "Egg Thukpa",
+    "price": 220,
+    "description": "A delicious egg thukpa freshly prepared by our chefs, served as part of our thukpa selection.",
+    "image": "/images/menu/egg-thukpa.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 99,
+    "category": "Chatamari",
+    "name": "Chicken Egg Chatamari",
+    "price": 225,
+    "description": "A delicious chicken egg chatamari freshly prepared by our chefs, served as part of our chatamari selection.",
+    "image": "/images/menu/chicken-egg-chatamari.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 100,
+    "category": "Chatamari",
+    "name": "Paneer Chatamari",
+    "price": 235,
+    "description": "A delicious paneer chatamari freshly prepared by our chefs, served as part of our chatamari selection.",
+    "image": "/images/menu/paneer-chatamari.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 101,
+    "category": "Chatamari",
+    "name": "Mutton Egg Chatamari",
+    "price": 260,
+    "description": "A delicious mutton egg chatamari freshly prepared by our chefs, served as part of our chatamari selection.",
+    "image": "/images/menu/mutton-egg-chatamari.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 102,
+    "category": "Chatamari",
+    "name": "Egg Chatamari",
+    "price": 195,
+    "description": "A delicious egg chatamari freshly prepared by our chefs, served as part of our chatamari selection.",
+    "image": "/images/menu/egg-chatamari.jpg",
+    "isVeg": false
+  },
+  {
+    "id": 103,
+    "category": "Chatamari",
+    "name": "Mix Chatamari",
+    "price": 250,
+    "description": "A delicious mix chatamari freshly prepared by our chefs, served as part of our chatamari selection.",
+    "image": "/images/menu/mix-chatamari.jpg",
+    "isVeg": true
+  },
+  {
+    "id": 104,
+    "category": "Chatamari",
+    "name": "Veg Chatamari",
+    "price": 185,
+    "description": "A delicious veg chatamari freshly prepared by our chefs, served as part of our chatamari selection.",
+    "image": "/images/menu/veg-chatamari.jpg",
+    "isVeg": true
+  }
+]
