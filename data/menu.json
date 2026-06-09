@@ -1,201 +1,1398 @@
 [
-  {"id":1,"category":"Breakfast","name":"Classic Breakfast Set","price":265,"is_veg":false},
-  {"id":2,"category":"Breakfast","name":"The Full Monthly","price":285,"is_veg":false},
-  {"id":3,"category":"Breakfast","name":"Sunrise Skillet","price":225,"is_veg":false},
-  {"id":4,"category":"Breakfast","name":"French Toast Stuff Cheese With Honey","price":220,"is_veg":true},
-  {"id":5,"category":"Breakfast","name":"Hash Brown Potatoes and Chicken Bacon","price":220,"is_veg":false},
-  {"id":6,"category":"Breakfast","name":"Spanish Frittata","price":225,"is_veg":false},
-  {"id":7,"category":"Breakfast","name":"French Toast With Honey","price":185,"is_veg":true},
-  {"id":8,"category":"Breakfast","name":"Hot Dog Chicken","price":210,"is_veg":false},
-  {"id":9,"category":"Breakfast","name":"Hot Dog Mutton","price":230,"is_veg":false},
-  {"id":10,"category":"Breakfast","name":"Porridge / Muesli With Hot Milk","price":200,"is_veg":true},
-  {"id":11,"category":"Breakfast","name":"Plain Toast With Butter Jam","price":140,"is_veg":true},
-  {"id":12,"category":"Breakfast","name":"Egg Boiled","price":80,"is_veg":false},
-  {"id":13,"category":"Breakfast","name":"Egg Scramble","price":90,"is_veg":false},
-  {"id":14,"category":"Breakfast","name":"Egg Poached","price":80,"is_veg":false},
-  {"id":15,"category":"Breakfast","name":"Sunny Side Up","price":75,"is_veg":true},
-  {"id":16,"category":"Breakfast","name":"Well Done Egg","price":75,"is_veg":false},
-  {"id":17,"category":"Breakfast","name":"Over Easy Egg","price":75,"is_veg":false},
-  {"id":18,"category":"Breakfast","name":"Plain Omelet","price":90,"is_veg":false},
-  {"id":19,"category":"Breakfast","name":"Masala Omelet","price":110,"is_veg":false},
-  {"id":20,"category":"Breakfast","name":"Pancake With Chocolate Syrup","price":180,"is_veg":true},
-  {"id":21,"category":"Breakfast","name":"Pancake With Maple Syrup","price":190,"is_veg":true},
-  {"id":22,"category":"Breakfast","name":"Pancake Banana With Walnut","price":200,"is_veg":true},
-  {"id":23,"category":"Pasta","name":"Neapolitana Veg","price":220,"is_veg":true},
-  {"id":24,"category":"Pasta","name":"Marinara","price":240,"is_veg":true},
-  {"id":25,"category":"Pasta","name":"Gambery","price":280,"is_veg":false},
-  {"id":26,"category":"Pasta","name":"Alfredo Veg","price":230,"is_veg":true},
-  {"id":27,"category":"Pasta","name":"Mama Miha Creamy Veg","price":250,"is_veg":true},
-  {"id":28,"category":"Pasta","name":"Carbonara","price":270,"is_veg":false},
-  {"id":29,"category":"Pasta","name":"Arrabbiata Veg","price":240,"is_veg":true},
-  {"id":30,"category":"Pasta","name":"Bolognese","price":270,"is_veg":false},
-  {"id":31,"category":"Pizza","name":"Chicken Pizza","price":350,"is_veg":false},
-  {"id":32,"category":"Pizza","name":"Veg Pizza","price":340,"is_veg":true},
-  {"id":33,"category":"Pizza","name":"Cheese Pizza","price":280,"is_veg":true},
-  {"id":34,"category":"Pizza","name":"Hawaiian Pizza","price":350,"is_veg":false},
-  {"id":35,"category":"Pizza","name":"Margherita Pizza Veg","price":340,"is_veg":true},
-  {"id":36,"category":"Pizza","name":"Classic Pizza Veg","price":350,"is_veg":true},
-  {"id":37,"category":"Pizza","name":"Mushroom Pizza Veg","price":340,"is_veg":true},
-  {"id":38,"category":"Pizza","name":"Sausage Pizza Chicken","price":350,"is_veg":false},
-  {"id":39,"category":"Pizza","name":"Prinsa Special Pizza Non Veg","price":415,"is_veg":false},
-  {"id":40,"category":"Burger","name":"Chicken and Cheese Burger","price":200,"is_veg":false},
-  {"id":41,"category":"Burger","name":"Egg and Cheese Burger","price":180,"is_veg":false},
-  {"id":42,"category":"Burger","name":"Mutton and Cheese Burger","price":240,"is_veg":false},
-  {"id":43,"category":"Burger","name":"Veg and Cheese Burger","price":190,"is_veg":true},
-  {"id":44,"category":"Burger","name":"Chicken Smash Burger","price":220,"is_veg":false},
-  {"id":45,"category":"Burger","name":"Fish and Cheese Burger","price":230,"is_veg":false},
-  {"id":46,"category":"Burger","name":"Prinsa Special Burger Non Veg","price":260,"is_veg":false},
-  {"id":47,"category":"Sandwich","name":"Chicken and Cheese Sandwich","price":185,"is_veg":false},
-  {"id":48,"category":"Sandwich","name":"Egg and Cheese Sandwich","price":180,"is_veg":false},
-  {"id":49,"category":"Sandwich","name":"Veg and Cheese Sandwich","price":190,"is_veg":true},
-  {"id":50,"category":"Sandwich","name":"Tuna and Cheese Sandwich","price":180,"is_veg":false},
-  {"id":51,"category":"Sandwich","name":"Ham (Chicken) and Cheese Sandwich","price":180,"is_veg":false},
-  {"id":52,"category":"Sandwich","name":"Prinsa Special Club Sandwich Non Veg","price":240,"is_veg":false},
-  {"id":53,"category":"Fry Rice","name":"Chicken Fry Rice","price":220,"is_veg":false},
-  {"id":54,"category":"Fry Rice","name":"Egg Fry Rice","price":210,"is_veg":false},
-  {"id":55,"category":"Fry Rice","name":"Veg Fry Rice","price":190,"is_veg":true},
-  {"id":56,"category":"Fry Rice","name":"Mushroom Fry Rice Veg","price":220,"is_veg":true},
-  {"id":57,"category":"Fry Rice","name":"Mutton Fry Rice","price":245,"is_veg":false},
-  {"id":58,"category":"Fry Rice","name":"Mix Fry Rice","price":255,"is_veg":false},
-  {"id":59,"category":"Noodles","name":"Chicken Noodles","price":225,"is_veg":false},
-  {"id":60,"category":"Noodles","name":"Mutton Noodles","price":250,"is_veg":false},
-  {"id":61,"category":"Noodles","name":"Veg Noodles","price":200,"is_veg":true},
-  {"id":62,"category":"Noodles","name":"Egg Noodles","price":215,"is_veg":false},
-  {"id":63,"category":"Noodles","name":"Keema Noodles Chicken","price":235,"is_veg":false},
-  {"id":64,"category":"Noodles","name":"Keema Noodles Mutton","price":265,"is_veg":false},
-  {"id":65,"category":"Noodles","name":"Mix Noodles","price":260,"is_veg":false},
-  {"id":66,"category":"Noodles","name":"Paneer Mushroom Noodles Veg","price":240,"is_veg":true},
-  {"id":67,"category":"Momo","name":"Chicken Steam Momo","price":150,"is_veg":false},
-  {"id":68,"category":"Momo","name":"Chicken Soup Momo","price":155,"is_veg":false},
-  {"id":69,"category":"Momo","name":"Chicken Chilly Momo","price":170,"is_veg":false},
-  {"id":70,"category":"Momo","name":"Chicken Kothey Momo","price":165,"is_veg":false},
-  {"id":71,"category":"Momo","name":"Chicken Fried Momo","price":180,"is_veg":false},
-  {"id":72,"category":"Momo","name":"Veg Steam Momo","price":140,"is_veg":true},
-  {"id":73,"category":"Momo","name":"Veg Soup Momo","price":150,"is_veg":true},
-  {"id":74,"category":"Momo","name":"Veg Chilly Momo","price":160,"is_veg":true},
-  {"id":75,"category":"Momo","name":"Veg Kothey Momo","price":155,"is_veg":true},
-  {"id":76,"category":"Momo","name":"Veg Fried Momo","price":170,"is_veg":true},
-  {"id":77,"category":"Momo","name":"Chicken Combo Momo","price":270,"is_veg":false},
-  {"id":78,"category":"Momo","name":"Veg Combo Momo","price":250,"is_veg":true},
-  {"id":79,"category":"Grilled","name":"Grilled Chicken","price":370,"is_veg":false},
-  {"id":80,"category":"Grilled","name":"Pork Chop","price":390,"is_veg":false},
-  {"id":81,"category":"Grilled","name":"Grilled Fish","price":380,"is_veg":false},
-  {"id":82,"category":"Grilled","name":"Grilled Veg","price":320,"is_veg":true},
-  {"id":83,"category":"Grilled","name":"Grilled Prawns","price":480,"is_veg":false},
-  {"id":84,"category":"Grilled","name":"Mutton Steak","price":560,"is_veg":false},
-  {"id":85,"category":"Grilled","name":"Prinsa Special Mix Grilled Non Veg","price":695,"is_veg":false},
-  {"id":86,"category":"Grilled","name":"Chicken A La Kiev","price":430,"is_veg":false},
-  {"id":87,"category":"Sizzler","name":"Chicken Sizzler","price":430,"is_veg":false},
-  {"id":88,"category":"Sizzler","name":"Veg Sizzler","price":390,"is_veg":true},
-  {"id":89,"category":"Sizzler","name":"Fish Sizzler","price":430,"is_veg":false},
-  {"id":90,"category":"Sizzler","name":"Mutton Sizzler","price":590,"is_veg":false},
-  {"id":91,"category":"Sizzler","name":"Pork Sizzler","price":460,"is_veg":false},
-  {"id":92,"category":"Cutlet","name":"Chicken Cutlet","price":350,"is_veg":false},
-  {"id":93,"category":"Cutlet","name":"Fish Cutlet","price":360,"is_veg":false},
-  {"id":94,"category":"Cutlet","name":"Veg and Cheese Cutlet","price":330,"is_veg":true},
-  {"id":95,"category":"Cutlet","name":"Chicken Cordon Bleu","price":385,"is_veg":false},
-  {"id":96,"category":"Salad","name":"Chicken Caesar Salad","price":195,"is_veg":false},
-  {"id":97,"category":"Salad","name":"Greek Salad Veg","price":195,"is_veg":true},
-  {"id":98,"category":"Salad","name":"Green Salad","price":150,"is_veg":true},
-  {"id":99,"category":"Salad","name":"Waldorf Salad Veg","price":220,"is_veg":true},
-  {"id":100,"category":"Salad","name":"Chicken Salad","price":220,"is_veg":false},
-  {"id":101,"category":"Salad","name":"Tuna Salad","price":230,"is_veg":false},
-  {"id":102,"category":"Salad","name":"Prawn Salad","price":260,"is_veg":false},
-  {"id":103,"category":"Chop Suey","name":"Chicken Chop Suey","price":280,"is_veg":false},
-  {"id":104,"category":"Chop Suey","name":"Veg Chop Suey","price":250,"is_veg":true},
-  {"id":105,"category":"Chop Suey","name":"Mix Chop Suey","price":300,"is_veg":false},
-  {"id":106,"category":"Soup","name":"Chicken Hot and Sour Soup","price":180,"is_veg":false},
-  {"id":107,"category":"Soup","name":"Veg Hot and Sour Soup","price":160,"is_veg":true},
-  {"id":108,"category":"Soup","name":"Chicken Sweet Corn Soup","price":180,"is_veg":false},
-  {"id":109,"category":"Soup","name":"Veg Sweet Corn Soup","price":160,"is_veg":true},
-  {"id":110,"category":"Soup","name":"Chicken Mushroom Soup","price":190,"is_veg":false},
-  {"id":111,"category":"Soup","name":"Cream of Mushroom Soup Veg","price":170,"is_veg":true},
-  {"id":112,"category":"Soup","name":"Tomato Soup Veg","price":150,"is_veg":true},
-  {"id":113,"category":"Soup","name":"Chicken Clear Soup","price":170,"is_veg":false},
-  {"id":114,"category":"Thukpa","name":"Chicken Thukpa","price":230,"is_veg":false},
-  {"id":115,"category":"Thukpa","name":"Mutton Thukpa","price":265,"is_veg":false},
-  {"id":116,"category":"Thukpa","name":"Veg Thukpa","price":215,"is_veg":true},
-  {"id":117,"category":"Thukpa","name":"Pork Thukpa","price":240,"is_veg":false},
-  {"id":118,"category":"Thukpa","name":"Egg Thukpa","price":220,"is_veg":false},
-  {"id":119,"category":"Thukpa","name":"Special Veg Thukpa","price":245,"is_veg":true},
-  {"id":120,"category":"Thukpa","name":"Mix Thukpa (Chicken, Egg, Mutton)","price":260,"is_veg":false},
-  {"id":121,"category":"Chatamari","name":"Chicken Egg Chatamari","price":225,"is_veg":false},
-  {"id":122,"category":"Chatamari","name":"Paneer Chatamari (Veg)","price":235,"is_veg":true},
-  {"id":123,"category":"Chatamari","name":"Mutton Egg Chatamari","price":260,"is_veg":false},
-  {"id":124,"category":"Chatamari","name":"Egg Chatamari","price":195,"is_veg":false},
-  {"id":125,"category":"Chatamari","name":"Mix Chatamari","price":250,"is_veg":false},
-  {"id":126,"category":"Chatamari","name":"Veg Chatamari","price":185,"is_veg":true},
-  {"id":127,"category":"Curry With Plain Rice","name":"Plain Rice Only","price":90,"is_veg":true},
-  {"id":128,"category":"Curry With Plain Rice","name":"Chicken Curry With Plain Rice","price":290,"is_veg":false},
-  {"id":129,"category":"Curry With Plain Rice","name":"Mutton Curry With Plain Rice","price":330,"is_veg":false},
-  {"id":130,"category":"Curry With Plain Rice","name":"Fish Curry With Plain Rice","price":310,"is_veg":false},
-  {"id":131,"category":"Curry With Plain Rice","name":"Pork Curry With Plain Rice","price":320,"is_veg":false},
-  {"id":132,"category":"Curry With Plain Rice","name":"Veg Curry With Plain Rice","price":220,"is_veg":true},
-  {"id":133,"category":"Snacks","name":"Mushroom Chilly","price":190,"is_veg":true},
-  {"id":134,"category":"Snacks","name":"Paneer Chilly","price":200,"is_veg":true},
-  {"id":135,"category":"Snacks","name":"Chips Chilly","price":190,"is_veg":true},
-  {"id":136,"category":"Snacks","name":"Spicy Mushroom Spices","price":175,"is_veg":true},
-  {"id":137,"category":"Snacks","name":"French Fries","price":200,"is_veg":true},
-  {"id":138,"category":"Snacks","name":"Peri Peri Fries","price":210,"is_veg":true},
-  {"id":139,"category":"Snacks","name":"Fry Corn","price":175,"is_veg":true},
-  {"id":140,"category":"Snacks","name":"Fry Corn Chilly","price":185,"is_veg":true},
-  {"id":141,"category":"Snacks","name":"Onion Rings","price":165,"is_veg":true},
-  {"id":142,"category":"Snacks","name":"Gold Coin Mushroom","price":240,"is_veg":true},
-  {"id":143,"category":"Snacks","name":"Stuff Grilled Mushroom","price":230,"is_veg":true},
-  {"id":144,"category":"Snacks","name":"Veg Pakoda","price":190,"is_veg":true},
-  {"id":145,"category":"Snacks","name":"Veg Saslik","price":190,"is_veg":true},
-  {"id":146,"category":"Snacks","name":"Spicy Potato Spices","price":165,"is_veg":true},
-  {"id":147,"category":"Snacks","name":"Veg Fritters (Mexican Pakoda)","price":230,"is_veg":true},
-  {"id":148,"category":"Snacks","name":"Crispy Potatoes","price":185,"is_veg":true},
-  {"id":149,"category":"Snacks","name":"Chunkey Potatoes","price":200,"is_veg":true},
-  {"id":150,"category":"Snacks","name":"Corn Chat","price":180,"is_veg":true},
-  {"id":151,"category":"Snacks","name":"Veg Manchurian","price":220,"is_veg":true},
-  {"id":152,"category":"Snacks","name":"Veg and Cheese Finger","price":220,"is_veg":true},
-  {"id":153,"category":"Snacks","name":"Mozzarella Stick","price":260,"is_veg":true},
-  {"id":154,"category":"Snacks","name":"Grilled Cheese Mushroom","price":220,"is_veg":true},
-  {"id":155,"category":"Snacks","name":"Honey Chilly Fry Potato","price":225,"is_veg":true},
-  {"id":156,"category":"Snacks","name":"Veg Nuggets","price":210,"is_veg":true},
-  {"id":157,"category":"Snacks","name":"Aloo Chop","price":180,"is_veg":true},
-  {"id":158,"category":"Snacks","name":"Paneer Pakoda","price":190,"is_veg":true},
-  {"id":159,"category":"Snacks","name":"Mushroom Szechuan Pepper","price":230,"is_veg":true},
-  {"id":160,"category":"Snacks","name":"Veg Spring Roll","price":215,"is_veg":true},
-  {"id":161,"category":"Snacks","name":"Paneer Mushroom Spring Roll","price":240,"is_veg":true},
-  {"id":162,"category":"Snacks","name":"Spicy Potatoes Wedges","price":230,"is_veg":true},
-  {"id":163,"category":"Snacks","name":"Veg Finger","price":190,"is_veg":true},
-  {"id":164,"category":"Snacks","name":"Mushroom Stick","price":180,"is_veg":true},
-  {"id":165,"category":"Snacks","name":"Chicken Chilly Boneless","price":260,"is_veg":false},
-  {"id":166,"category":"Snacks","name":"Fish Chilly","price":270,"is_veg":false},
-  {"id":167,"category":"Snacks","name":"Pork Chilly","price":280,"is_veg":false},
-  {"id":168,"category":"Snacks","name":"Chicken Manchurians","price":280,"is_veg":false},
-  {"id":169,"category":"Snacks","name":"Crispy Chicken","price":255,"is_veg":false},
-  {"id":170,"category":"Snacks","name":"Crispy Chicken Chilly","price":265,"is_veg":false},
-  {"id":171,"category":"Snacks","name":"Grill Pork","price":290,"is_veg":false},
-  {"id":172,"category":"Snacks","name":"Pork Nuggets (6 Piece)","price":270,"is_veg":false},
-  {"id":173,"category":"Snacks","name":"Dragon Chicken","price":290,"is_veg":false},
-  {"id":174,"category":"Snacks","name":"Fish Finger","price":290,"is_veg":false},
-  {"id":175,"category":"Snacks","name":"Fish and Chip","price":330,"is_veg":false},
-  {"id":176,"category":"Snacks","name":"Chicken Drumstick","price":300,"is_veg":false},
-  {"id":177,"category":"Snacks","name":"BBQ Chicken","price":285,"is_veg":false},
-  {"id":178,"category":"Snacks","name":"Chicken Nuggets (6 Piece)","price":260,"is_veg":false},
-  {"id":179,"category":"Snacks","name":"Spicy Chicken Wings (6 Piece)","price":260,"is_veg":false},
-  {"id":180,"category":"Snacks","name":"Chicken Lollipop (8 Piece)","price":290,"is_veg":false},
-  {"id":181,"category":"Snacks","name":"Golden Fry Prawns (8 Piece)","price":320,"is_veg":false},
-  {"id":182,"category":"Snacks","name":"Prawns Tempura (8 Piece)","price":300,"is_veg":false},
-  {"id":183,"category":"Snacks","name":"Prawns Chilly (8 Piece)","price":285,"is_veg":false},
-  {"id":184,"category":"Snacks","name":"Chicken Szechuan Pepper","price":270,"is_veg":false},
-  {"id":185,"category":"Snacks","name":"Lemon Butter Chicken","price":260,"is_veg":false},
-  {"id":186,"category":"Snacks","name":"Sausage Fry (Chicken - 4 Piece)","price":160,"is_veg":false},
-  {"id":187,"category":"Snacks","name":"Sausage Chilly (Chicken - 4 Piece)","price":185,"is_veg":false},
-  {"id":188,"category":"Snacks","name":"Grilled Sausage (Chicken - 4 Piece)","price":180,"is_veg":false},
-  {"id":189,"category":"Snacks","name":"Crab Roast","price":240,"is_veg":false},
-  {"id":190,"category":"Snacks","name":"Chicken Yakitori With Kikkoman","price":235,"is_veg":false},
-  {"id":191,"category":"Snacks","name":"Fish Nuggets (6 Piece)","price":260,"is_veg":false},
-  {"id":192,"category":"Snacks","name":"Crispy Fish","price":265,"is_veg":false},
-  {"id":193,"category":"Snacks","name":"Fish Szechuan Pepper","price":270,"is_veg":false},
-  {"id":194,"category":"Snacks","name":"Boiled Chicken","price":230,"is_veg":false},
-  {"id":195,"category":"Snacks","name":"Chicken Sadheko","price":265,"is_veg":false},
-  {"id":196,"category":"Snacks","name":"Chicken Chop (6 Piece)","price":210,"is_veg":false},
-  {"id":197,"category":"Snacks","name":"Chicken Spring Roll","price":230,"is_veg":false},
-  {"id":198,"category":"Snacks","name":"Egg Spring Roll","price":210,"is_veg":false},
-  {"id":199,"category":"Snacks","name":"Chicken Mini Kievs With Apple Sauce","price":280,"is_veg":false}
+  {
+    "id": 1,
+    "category": "Breakfast",
+    "name": "Classic Breakfast Set",
+    "price": 265,
+    "is_veg": false
+  },
+  {
+    "id": 2,
+    "category": "Breakfast",
+    "name": "The Full Monthly",
+    "price": 285,
+    "is_veg": false,
+    "description": "",
+    "is_featured": false,
+    "is_available": true
+  },
+  {
+    "id": 3,
+    "category": "Breakfast",
+    "name": "Sunrise Skillet",
+    "price": 225,
+    "is_veg": false
+  },
+  {
+    "id": 4,
+    "category": "Breakfast",
+    "name": "French Toast Stuff Cheese With Honey",
+    "price": 220,
+    "is_veg": true
+  },
+  {
+    "id": 5,
+    "category": "Breakfast",
+    "name": "Hash Brown Potatoes and Chicken Bacon",
+    "price": 220,
+    "is_veg": false
+  },
+  {
+    "id": 6,
+    "category": "Breakfast",
+    "name": "Spanish Frittata",
+    "price": 225,
+    "is_veg": false
+  },
+  {
+    "id": 7,
+    "category": "Breakfast",
+    "name": "French Toast With Honey",
+    "price": 185,
+    "is_veg": true
+  },
+  {
+    "id": 8,
+    "category": "Breakfast",
+    "name": "Hot Dog Chicken",
+    "price": 210,
+    "is_veg": false
+  },
+  {
+    "id": 9,
+    "category": "Breakfast",
+    "name": "Hot Dog Mutton",
+    "price": 230,
+    "is_veg": false
+  },
+  {
+    "id": 10,
+    "category": "Breakfast",
+    "name": "Porridge / Muesli With Hot Milk",
+    "price": 200,
+    "is_veg": true
+  },
+  {
+    "id": 11,
+    "category": "Breakfast",
+    "name": "Plain Toast With Butter Jam",
+    "price": 140,
+    "is_veg": true
+  },
+  {
+    "id": 12,
+    "category": "Breakfast",
+    "name": "Egg Boiled",
+    "price": 80,
+    "is_veg": false
+  },
+  {
+    "id": 13,
+    "category": "Breakfast",
+    "name": "Egg Scramble",
+    "price": 90,
+    "is_veg": false
+  },
+  {
+    "id": 14,
+    "category": "Breakfast",
+    "name": "Egg Poached",
+    "price": 80,
+    "is_veg": false
+  },
+  {
+    "id": 15,
+    "category": "Breakfast",
+    "name": "Sunny Side Up",
+    "price": 75,
+    "is_veg": true
+  },
+  {
+    "id": 16,
+    "category": "Breakfast",
+    "name": "Well Done Egg",
+    "price": 75,
+    "is_veg": false
+  },
+  {
+    "id": 17,
+    "category": "Breakfast",
+    "name": "Over Easy Egg",
+    "price": 75,
+    "is_veg": false
+  },
+  {
+    "id": 18,
+    "category": "Breakfast",
+    "name": "Plain Omelet",
+    "price": 90,
+    "is_veg": false
+  },
+  {
+    "id": 19,
+    "category": "Breakfast",
+    "name": "Masala Omelet",
+    "price": 110,
+    "is_veg": false
+  },
+  {
+    "id": 20,
+    "category": "Breakfast",
+    "name": "Pancake With Chocolate Syrup",
+    "price": 180,
+    "is_veg": true
+  },
+  {
+    "id": 21,
+    "category": "Breakfast",
+    "name": "Pancake With Maple Syrup",
+    "price": 190,
+    "is_veg": true
+  },
+  {
+    "id": 22,
+    "category": "Breakfast",
+    "name": "Pancake Banana With Walnut",
+    "price": 200,
+    "is_veg": true
+  },
+  {
+    "id": 23,
+    "category": "Pasta",
+    "name": "Neapolitana Veg",
+    "price": 220,
+    "is_veg": true
+  },
+  {
+    "id": 24,
+    "category": "Pasta",
+    "name": "Marinara",
+    "price": 240,
+    "is_veg": true
+  },
+  {
+    "id": 25,
+    "category": "Pasta",
+    "name": "Gambery",
+    "price": 280,
+    "is_veg": false
+  },
+  {
+    "id": 26,
+    "category": "Pasta",
+    "name": "Alfredo Veg",
+    "price": 230,
+    "is_veg": true
+  },
+  {
+    "id": 27,
+    "category": "Pasta",
+    "name": "Mama Miha Creamy Veg",
+    "price": 250,
+    "is_veg": true
+  },
+  {
+    "id": 28,
+    "category": "Pasta",
+    "name": "Carbonara",
+    "price": 270,
+    "is_veg": false
+  },
+  {
+    "id": 29,
+    "category": "Pasta",
+    "name": "Arrabbiata Veg",
+    "price": 240,
+    "is_veg": true
+  },
+  {
+    "id": 30,
+    "category": "Pasta",
+    "name": "Bolognese",
+    "price": 270,
+    "is_veg": false
+  },
+  {
+    "id": 31,
+    "category": "Pizza",
+    "name": "Chicken Pizza",
+    "price": 350,
+    "is_veg": false
+  },
+  {
+    "id": 32,
+    "category": "Pizza",
+    "name": "Veg Pizza",
+    "price": 340,
+    "is_veg": true
+  },
+  {
+    "id": 33,
+    "category": "Pizza",
+    "name": "Cheese Pizza",
+    "price": 280,
+    "is_veg": true
+  },
+  {
+    "id": 34,
+    "category": "Pizza",
+    "name": "Hawaiian Pizza",
+    "price": 350,
+    "is_veg": false
+  },
+  {
+    "id": 35,
+    "category": "Pizza",
+    "name": "Margherita Pizza Veg",
+    "price": 340,
+    "is_veg": true
+  },
+  {
+    "id": 36,
+    "category": "Pizza",
+    "name": "Classic Pizza Veg",
+    "price": 350,
+    "is_veg": true
+  },
+  {
+    "id": 37,
+    "category": "Pizza",
+    "name": "Mushroom Pizza Veg",
+    "price": 340,
+    "is_veg": true
+  },
+  {
+    "id": 38,
+    "category": "Pizza",
+    "name": "Sausage Pizza Chicken",
+    "price": 350,
+    "is_veg": false
+  },
+  {
+    "id": 39,
+    "category": "Pizza",
+    "name": "Prinsa Special Pizza Non Veg",
+    "price": 415,
+    "is_veg": false
+  },
+  {
+    "id": 40,
+    "category": "Burger",
+    "name": "Chicken and Cheese Burger",
+    "price": 200,
+    "is_veg": false
+  },
+  {
+    "id": 41,
+    "category": "Burger",
+    "name": "Egg and Cheese Burger",
+    "price": 180,
+    "is_veg": false
+  },
+  {
+    "id": 42,
+    "category": "Burger",
+    "name": "Mutton and Cheese Burger",
+    "price": 240,
+    "is_veg": false
+  },
+  {
+    "id": 43,
+    "category": "Burger",
+    "name": "Veg and Cheese Burger",
+    "price": 190,
+    "is_veg": true
+  },
+  {
+    "id": 44,
+    "category": "Burger",
+    "name": "Chicken Smash Burger",
+    "price": 220,
+    "is_veg": false
+  },
+  {
+    "id": 45,
+    "category": "Burger",
+    "name": "Fish and Cheese Burger",
+    "price": 230,
+    "is_veg": false
+  },
+  {
+    "id": 46,
+    "category": "Burger",
+    "name": "Prinsa Special Burger Non Veg",
+    "price": 260,
+    "is_veg": false
+  },
+  {
+    "id": 47,
+    "category": "Sandwich",
+    "name": "Chicken and Cheese Sandwich",
+    "price": 185,
+    "is_veg": false
+  },
+  {
+    "id": 48,
+    "category": "Sandwich",
+    "name": "Egg and Cheese Sandwich",
+    "price": 180,
+    "is_veg": false
+  },
+  {
+    "id": 49,
+    "category": "Sandwich",
+    "name": "Veg and Cheese Sandwich",
+    "price": 190,
+    "is_veg": true
+  },
+  {
+    "id": 50,
+    "category": "Sandwich",
+    "name": "Tuna and Cheese Sandwich",
+    "price": 180,
+    "is_veg": false
+  },
+  {
+    "id": 51,
+    "category": "Sandwich",
+    "name": "Ham (Chicken) and Cheese Sandwich",
+    "price": 180,
+    "is_veg": false
+  },
+  {
+    "id": 52,
+    "category": "Sandwich",
+    "name": "Prinsa Special Club Sandwich Non Veg",
+    "price": 240,
+    "is_veg": false
+  },
+  {
+    "id": 53,
+    "category": "Fry Rice",
+    "name": "Chicken Fry Rice",
+    "price": 220,
+    "is_veg": false
+  },
+  {
+    "id": 54,
+    "category": "Fry Rice",
+    "name": "Egg Fry Rice",
+    "price": 210,
+    "is_veg": false
+  },
+  {
+    "id": 55,
+    "category": "Fry Rice",
+    "name": "Veg Fry Rice",
+    "price": 190,
+    "is_veg": true
+  },
+  {
+    "id": 56,
+    "category": "Fry Rice",
+    "name": "Mushroom Fry Rice Veg",
+    "price": 220,
+    "is_veg": true
+  },
+  {
+    "id": 57,
+    "category": "Fry Rice",
+    "name": "Mutton Fry Rice",
+    "price": 245,
+    "is_veg": false
+  },
+  {
+    "id": 58,
+    "category": "Fry Rice",
+    "name": "Mix Fry Rice",
+    "price": 255,
+    "is_veg": false
+  },
+  {
+    "id": 59,
+    "category": "Noodles",
+    "name": "Chicken Noodles",
+    "price": 225,
+    "is_veg": false
+  },
+  {
+    "id": 60,
+    "category": "Noodles",
+    "name": "Mutton Noodles",
+    "price": 250,
+    "is_veg": false
+  },
+  {
+    "id": 61,
+    "category": "Noodles",
+    "name": "Veg Noodles",
+    "price": 200,
+    "is_veg": true
+  },
+  {
+    "id": 62,
+    "category": "Noodles",
+    "name": "Egg Noodles",
+    "price": 215,
+    "is_veg": false
+  },
+  {
+    "id": 63,
+    "category": "Noodles",
+    "name": "Keema Noodles Chicken",
+    "price": 235,
+    "is_veg": false
+  },
+  {
+    "id": 64,
+    "category": "Noodles",
+    "name": "Keema Noodles Mutton",
+    "price": 265,
+    "is_veg": false
+  },
+  {
+    "id": 65,
+    "category": "Noodles",
+    "name": "Mix Noodles",
+    "price": 260,
+    "is_veg": false
+  },
+  {
+    "id": 66,
+    "category": "Noodles",
+    "name": "Paneer Mushroom Noodles Veg",
+    "price": 240,
+    "is_veg": true
+  },
+  {
+    "id": 67,
+    "category": "Momo",
+    "name": "Chicken Steam Momo",
+    "price": 150,
+    "is_veg": false
+  },
+  {
+    "id": 68,
+    "category": "Momo",
+    "name": "Chicken Soup Momo",
+    "price": 155,
+    "is_veg": false
+  },
+  {
+    "id": 69,
+    "category": "Momo",
+    "name": "Chicken Chilly Momo",
+    "price": 170,
+    "is_veg": false
+  },
+  {
+    "id": 70,
+    "category": "Momo",
+    "name": "Chicken Kothey Momo",
+    "price": 165,
+    "is_veg": false
+  },
+  {
+    "id": 71,
+    "category": "Momo",
+    "name": "Chicken Fried Momo",
+    "price": 180,
+    "is_veg": false
+  },
+  {
+    "id": 72,
+    "category": "Momo",
+    "name": "Veg Steam Momo",
+    "price": 140,
+    "is_veg": true
+  },
+  {
+    "id": 73,
+    "category": "Momo",
+    "name": "Veg Soup Momo",
+    "price": 150,
+    "is_veg": true
+  },
+  {
+    "id": 74,
+    "category": "Momo",
+    "name": "Veg Chilly Momo",
+    "price": 160,
+    "is_veg": true
+  },
+  {
+    "id": 75,
+    "category": "Momo",
+    "name": "Veg Kothey Momo",
+    "price": 155,
+    "is_veg": true
+  },
+  {
+    "id": 76,
+    "category": "Momo",
+    "name": "Veg Fried Momo",
+    "price": 170,
+    "is_veg": true
+  },
+  {
+    "id": 77,
+    "category": "Momo",
+    "name": "Chicken Combo Momo",
+    "price": 270,
+    "is_veg": false
+  },
+  {
+    "id": 78,
+    "category": "Momo",
+    "name": "Veg Combo Momo",
+    "price": 250,
+    "is_veg": true
+  },
+  {
+    "id": 79,
+    "category": "Grilled",
+    "name": "Grilled Chicken",
+    "price": 370,
+    "is_veg": false
+  },
+  {
+    "id": 80,
+    "category": "Grilled",
+    "name": "Pork Chop",
+    "price": 390,
+    "is_veg": false
+  },
+  {
+    "id": 81,
+    "category": "Grilled",
+    "name": "Grilled Fish",
+    "price": 380,
+    "is_veg": false
+  },
+  {
+    "id": 82,
+    "category": "Grilled",
+    "name": "Grilled Veg",
+    "price": 320,
+    "is_veg": true
+  },
+  {
+    "id": 83,
+    "category": "Grilled",
+    "name": "Grilled Prawns",
+    "price": 480,
+    "is_veg": false
+  },
+  {
+    "id": 84,
+    "category": "Grilled",
+    "name": "Mutton Steak",
+    "price": 560,
+    "is_veg": false
+  },
+  {
+    "id": 85,
+    "category": "Grilled",
+    "name": "Prinsa Special Mix Grilled Non Veg",
+    "price": 695,
+    "is_veg": false
+  },
+  {
+    "id": 86,
+    "category": "Grilled",
+    "name": "Chicken A La Kiev",
+    "price": 430,
+    "is_veg": false
+  },
+  {
+    "id": 87,
+    "category": "Sizzler",
+    "name": "Chicken Sizzler",
+    "price": 430,
+    "is_veg": false
+  },
+  {
+    "id": 88,
+    "category": "Sizzler",
+    "name": "Veg Sizzler",
+    "price": 390,
+    "is_veg": true
+  },
+  {
+    "id": 89,
+    "category": "Sizzler",
+    "name": "Fish Sizzler",
+    "price": 430,
+    "is_veg": false
+  },
+  {
+    "id": 90,
+    "category": "Sizzler",
+    "name": "Mutton Sizzler",
+    "price": 590,
+    "is_veg": false
+  },
+  {
+    "id": 91,
+    "category": "Sizzler",
+    "name": "Pork Sizzler",
+    "price": 460,
+    "is_veg": false
+  },
+  {
+    "id": 92,
+    "category": "Cutlet",
+    "name": "Chicken Cutlet",
+    "price": 350,
+    "is_veg": false
+  },
+  {
+    "id": 93,
+    "category": "Cutlet",
+    "name": "Fish Cutlet",
+    "price": 360,
+    "is_veg": false
+  },
+  {
+    "id": 94,
+    "category": "Cutlet",
+    "name": "Veg and Cheese Cutlet",
+    "price": 330,
+    "is_veg": true
+  },
+  {
+    "id": 95,
+    "category": "Cutlet",
+    "name": "Chicken Cordon Bleu",
+    "price": 385,
+    "is_veg": false
+  },
+  {
+    "id": 96,
+    "category": "Salad",
+    "name": "Chicken Caesar Salad",
+    "price": 195,
+    "is_veg": false
+  },
+  {
+    "id": 97,
+    "category": "Salad",
+    "name": "Greek Salad Veg",
+    "price": 195,
+    "is_veg": true
+  },
+  {
+    "id": 98,
+    "category": "Salad",
+    "name": "Green Salad",
+    "price": 150,
+    "is_veg": true
+  },
+  {
+    "id": 99,
+    "category": "Salad",
+    "name": "Waldorf Salad Veg",
+    "price": 220,
+    "is_veg": true
+  },
+  {
+    "id": 100,
+    "category": "Salad",
+    "name": "Chicken Salad",
+    "price": 220,
+    "is_veg": false
+  },
+  {
+    "id": 101,
+    "category": "Salad",
+    "name": "Tuna Salad",
+    "price": 230,
+    "is_veg": false
+  },
+  {
+    "id": 102,
+    "category": "Salad",
+    "name": "Prawn Salad",
+    "price": 260,
+    "is_veg": false
+  },
+  {
+    "id": 103,
+    "category": "Chop Suey",
+    "name": "Chicken Chop Suey",
+    "price": 280,
+    "is_veg": false
+  },
+  {
+    "id": 104,
+    "category": "Chop Suey",
+    "name": "Veg Chop Suey",
+    "price": 250,
+    "is_veg": true
+  },
+  {
+    "id": 105,
+    "category": "Chop Suey",
+    "name": "Mix Chop Suey",
+    "price": 300,
+    "is_veg": false
+  },
+  {
+    "id": 106,
+    "category": "Soup",
+    "name": "Chicken Hot and Sour Soup",
+    "price": 180,
+    "is_veg": false
+  },
+  {
+    "id": 107,
+    "category": "Soup",
+    "name": "Veg Hot and Sour Soup",
+    "price": 160,
+    "is_veg": true
+  },
+  {
+    "id": 108,
+    "category": "Soup",
+    "name": "Chicken Sweet Corn Soup",
+    "price": 180,
+    "is_veg": false
+  },
+  {
+    "id": 109,
+    "category": "Soup",
+    "name": "Veg Sweet Corn Soup",
+    "price": 160,
+    "is_veg": true
+  },
+  {
+    "id": 110,
+    "category": "Soup",
+    "name": "Chicken Mushroom Soup",
+    "price": 190,
+    "is_veg": false
+  },
+  {
+    "id": 111,
+    "category": "Soup",
+    "name": "Cream of Mushroom Soup Veg",
+    "price": 170,
+    "is_veg": true
+  },
+  {
+    "id": 112,
+    "category": "Soup",
+    "name": "Tomato Soup Veg",
+    "price": 150,
+    "is_veg": true
+  },
+  {
+    "id": 113,
+    "category": "Soup",
+    "name": "Chicken Clear Soup",
+    "price": 170,
+    "is_veg": false
+  },
+  {
+    "id": 114,
+    "category": "Thukpa",
+    "name": "Chicken Thukpa",
+    "price": 230,
+    "is_veg": false
+  },
+  {
+    "id": 115,
+    "category": "Thukpa",
+    "name": "Mutton Thukpa",
+    "price": 265,
+    "is_veg": false
+  },
+  {
+    "id": 116,
+    "category": "Thukpa",
+    "name": "Veg Thukpa",
+    "price": 215,
+    "is_veg": true
+  },
+  {
+    "id": 117,
+    "category": "Thukpa",
+    "name": "Pork Thukpa",
+    "price": 240,
+    "is_veg": false
+  },
+  {
+    "id": 118,
+    "category": "Thukpa",
+    "name": "Egg Thukpa",
+    "price": 220,
+    "is_veg": false
+  },
+  {
+    "id": 119,
+    "category": "Thukpa",
+    "name": "Special Veg Thukpa",
+    "price": 245,
+    "is_veg": true
+  },
+  {
+    "id": 120,
+    "category": "Thukpa",
+    "name": "Mix Thukpa (Chicken, Egg, Mutton)",
+    "price": 260,
+    "is_veg": false
+  },
+  {
+    "id": 121,
+    "category": "Chatamari",
+    "name": "Chicken Egg Chatamari",
+    "price": 225,
+    "is_veg": false
+  },
+  {
+    "id": 122,
+    "category": "Chatamari",
+    "name": "Paneer Chatamari (Veg)",
+    "price": 235,
+    "is_veg": true
+  },
+  {
+    "id": 123,
+    "category": "Chatamari",
+    "name": "Mutton Egg Chatamari",
+    "price": 260,
+    "is_veg": false
+  },
+  {
+    "id": 124,
+    "category": "Chatamari",
+    "name": "Egg Chatamari",
+    "price": 195,
+    "is_veg": false
+  },
+  {
+    "id": 125,
+    "category": "Chatamari",
+    "name": "Mix Chatamari",
+    "price": 250,
+    "is_veg": false
+  },
+  {
+    "id": 126,
+    "category": "Chatamari",
+    "name": "Veg Chatamari",
+    "price": 185,
+    "is_veg": true
+  },
+  {
+    "id": 127,
+    "category": "Curry With Plain Rice",
+    "name": "Plain Rice Only",
+    "price": 90,
+    "is_veg": true
+  },
+  {
+    "id": 128,
+    "category": "Curry With Plain Rice",
+    "name": "Chicken Curry With Plain Rice",
+    "price": 290,
+    "is_veg": false
+  },
+  {
+    "id": 129,
+    "category": "Curry With Plain Rice",
+    "name": "Mutton Curry With Plain Rice",
+    "price": 330,
+    "is_veg": false
+  },
+  {
+    "id": 130,
+    "category": "Curry With Plain Rice",
+    "name": "Fish Curry With Plain Rice",
+    "price": 310,
+    "is_veg": false
+  },
+  {
+    "id": 131,
+    "category": "Curry With Plain Rice",
+    "name": "Pork Curry With Plain Rice",
+    "price": 320,
+    "is_veg": false
+  },
+  {
+    "id": 132,
+    "category": "Curry With Plain Rice",
+    "name": "Veg Curry With Plain Rice",
+    "price": 220,
+    "is_veg": true
+  },
+  {
+    "id": 133,
+    "category": "Snacks",
+    "name": "Mushroom Chilly",
+    "price": 190,
+    "is_veg": true
+  },
+  {
+    "id": 134,
+    "category": "Snacks",
+    "name": "Paneer Chilly",
+    "price": 200,
+    "is_veg": true
+  },
+  {
+    "id": 135,
+    "category": "Snacks",
+    "name": "Chips Chilly",
+    "price": 190,
+    "is_veg": true
+  },
+  {
+    "id": 136,
+    "category": "Snacks",
+    "name": "Spicy Mushroom Spices",
+    "price": 175,
+    "is_veg": true
+  },
+  {
+    "id": 137,
+    "category": "Snacks",
+    "name": "French Fries",
+    "price": 200,
+    "is_veg": true
+  },
+  {
+    "id": 138,
+    "category": "Snacks",
+    "name": "Peri Peri Fries",
+    "price": 210,
+    "is_veg": true
+  },
+  {
+    "id": 139,
+    "category": "Snacks",
+    "name": "Fry Corn",
+    "price": 175,
+    "is_veg": true
+  },
+  {
+    "id": 140,
+    "category": "Snacks",
+    "name": "Fry Corn Chilly",
+    "price": 185,
+    "is_veg": true
+  },
+  {
+    "id": 141,
+    "category": "Snacks",
+    "name": "Onion Rings",
+    "price": 165,
+    "is_veg": true
+  },
+  {
+    "id": 142,
+    "category": "Snacks",
+    "name": "Gold Coin Mushroom",
+    "price": 240,
+    "is_veg": true
+  },
+  {
+    "id": 143,
+    "category": "Snacks",
+    "name": "Stuff Grilled Mushroom",
+    "price": 230,
+    "is_veg": true
+  },
+  {
+    "id": 144,
+    "category": "Snacks",
+    "name": "Veg Pakoda",
+    "price": 190,
+    "is_veg": true
+  },
+  {
+    "id": 145,
+    "category": "Snacks",
+    "name": "Veg Saslik",
+    "price": 190,
+    "is_veg": true
+  },
+  {
+    "id": 146,
+    "category": "Snacks",
+    "name": "Spicy Potato Spices",
+    "price": 165,
+    "is_veg": true
+  },
+  {
+    "id": 147,
+    "category": "Snacks",
+    "name": "Veg Fritters (Mexican Pakoda)",
+    "price": 230,
+    "is_veg": true
+  },
+  {
+    "id": 148,
+    "category": "Snacks",
+    "name": "Crispy Potatoes",
+    "price": 185,
+    "is_veg": true
+  },
+  {
+    "id": 149,
+    "category": "Snacks",
+    "name": "Chunkey Potatoes",
+    "price": 200,
+    "is_veg": true
+  },
+  {
+    "id": 150,
+    "category": "Snacks",
+    "name": "Corn Chat",
+    "price": 180,
+    "is_veg": true
+  },
+  {
+    "id": 151,
+    "category": "Snacks",
+    "name": "Veg Manchurian",
+    "price": 220,
+    "is_veg": true
+  },
+  {
+    "id": 152,
+    "category": "Snacks",
+    "name": "Veg and Cheese Finger",
+    "price": 220,
+    "is_veg": true
+  },
+  {
+    "id": 153,
+    "category": "Snacks",
+    "name": "Mozzarella Stick",
+    "price": 260,
+    "is_veg": true
+  },
+  {
+    "id": 154,
+    "category": "Snacks",
+    "name": "Grilled Cheese Mushroom",
+    "price": 220,
+    "is_veg": true
+  },
+  {
+    "id": 155,
+    "category": "Snacks",
+    "name": "Honey Chilly Fry Potato",
+    "price": 225,
+    "is_veg": true
+  },
+  {
+    "id": 156,
+    "category": "Snacks",
+    "name": "Veg Nuggets",
+    "price": 210,
+    "is_veg": true
+  },
+  {
+    "id": 157,
+    "category": "Snacks",
+    "name": "Aloo Chop",
+    "price": 180,
+    "is_veg": true
+  },
+  {
+    "id": 158,
+    "category": "Snacks",
+    "name": "Paneer Pakoda",
+    "price": 190,
+    "is_veg": true
+  },
+  {
+    "id": 159,
+    "category": "Snacks",
+    "name": "Mushroom Szechuan Pepper",
+    "price": 230,
+    "is_veg": true
+  },
+  {
+    "id": 160,
+    "category": "Snacks",
+    "name": "Veg Spring Roll",
+    "price": 215,
+    "is_veg": true
+  },
+  {
+    "id": 161,
+    "category": "Snacks",
+    "name": "Paneer Mushroom Spring Roll",
+    "price": 240,
+    "is_veg": true
+  },
+  {
+    "id": 162,
+    "category": "Snacks",
+    "name": "Spicy Potatoes Wedges",
+    "price": 230,
+    "is_veg": true
+  },
+  {
+    "id": 163,
+    "category": "Snacks",
+    "name": "Veg Finger",
+    "price": 190,
+    "is_veg": true
+  },
+  {
+    "id": 164,
+    "category": "Snacks",
+    "name": "Mushroom Stick",
+    "price": 180,
+    "is_veg": true
+  },
+  {
+    "id": 165,
+    "category": "Snacks",
+    "name": "Chicken Chilly Boneless",
+    "price": 260,
+    "is_veg": false
+  },
+  {
+    "id": 166,
+    "category": "Snacks",
+    "name": "Fish Chilly",
+    "price": 270,
+    "is_veg": false
+  },
+  {
+    "id": 167,
+    "category": "Snacks",
+    "name": "Pork Chilly",
+    "price": 280,
+    "is_veg": false
+  },
+  {
+    "id": 168,
+    "category": "Snacks",
+    "name": "Chicken Manchurians",
+    "price": 280,
+    "is_veg": false
+  },
+  {
+    "id": 169,
+    "category": "Snacks",
+    "name": "Crispy Chicken",
+    "price": 255,
+    "is_veg": false
+  },
+  {
+    "id": 170,
+    "category": "Snacks",
+    "name": "Crispy Chicken Chilly",
+    "price": 265,
+    "is_veg": false
+  },
+  {
+    "id": 171,
+    "category": "Snacks",
+    "name": "Grill Pork",
+    "price": 290,
+    "is_veg": false
+  },
+  {
+    "id": 172,
+    "category": "Snacks",
+    "name": "Pork Nuggets (6 Piece)",
+    "price": 270,
+    "is_veg": false
+  },
+  {
+    "id": 173,
+    "category": "Snacks",
+    "name": "Dragon Chicken",
+    "price": 290,
+    "is_veg": false
+  },
+  {
+    "id": 174,
+    "category": "Snacks",
+    "name": "Fish Finger",
+    "price": 290,
+    "is_veg": false
+  },
+  {
+    "id": 175,
+    "category": "Snacks",
+    "name": "Fish and Chip",
+    "price": 330,
+    "is_veg": false
+  },
+  {
+    "id": 176,
+    "category": "Snacks",
+    "name": "Chicken Drumstick",
+    "price": 300,
+    "is_veg": false
+  },
+  {
+    "id": 177,
+    "category": "Snacks",
+    "name": "BBQ Chicken",
+    "price": 285,
+    "is_veg": false
+  },
+  {
+    "id": 178,
+    "category": "Snacks",
+    "name": "Chicken Nuggets (6 Piece)",
+    "price": 260,
+    "is_veg": false
+  },
+  {
+    "id": 179,
+    "category": "Snacks",
+    "name": "Spicy Chicken Wings (6 Piece)",
+    "price": 260,
+    "is_veg": false
+  },
+  {
+    "id": 180,
+    "category": "Snacks",
+    "name": "Chicken Lollipop (8 Piece)",
+    "price": 290,
+    "is_veg": false
+  },
+  {
+    "id": 181,
+    "category": "Snacks",
+    "name": "Golden Fry Prawns (8 Piece)",
+    "price": 320,
+    "is_veg": false
+  },
+  {
+    "id": 182,
+    "category": "Snacks",
+    "name": "Prawns Tempura (8 Piece)",
+    "price": 300,
+    "is_veg": false
+  },
+  {
+    "id": 183,
+    "category": "Snacks",
+    "name": "Prawns Chilly (8 Piece)",
+    "price": 285,
+    "is_veg": false
+  },
+  {
+    "id": 184,
+    "category": "Snacks",
+    "name": "Chicken Szechuan Pepper",
+    "price": 270,
+    "is_veg": false
+  },
+  {
+    "id": 185,
+    "category": "Snacks",
+    "name": "Lemon Butter Chicken",
+    "price": 260,
+    "is_veg": false
+  },
+  {
+    "id": 186,
+    "category": "Snacks",
+    "name": "Sausage Fry (Chicken - 4 Piece)",
+    "price": 160,
+    "is_veg": false
+  },
+  {
+    "id": 187,
+    "category": "Snacks",
+    "name": "Sausage Chilly (Chicken - 4 Piece)",
+    "price": 185,
+    "is_veg": false
+  },
+  {
+    "id": 188,
+    "category": "Snacks",
+    "name": "Grilled Sausage (Chicken - 4 Piece)",
+    "price": 180,
+    "is_veg": false
+  },
+  {
+    "id": 189,
+    "category": "Snacks",
+    "name": "Crab Roast",
+    "price": 240,
+    "is_veg": false
+  },
+  {
+    "id": 190,
+    "category": "Snacks",
+    "name": "Chicken Yakitori With Kikkoman",
+    "price": 235,
+    "is_veg": false
+  },
+  {
+    "id": 191,
+    "category": "Snacks",
+    "name": "Fish Nuggets (6 Piece)",
+    "price": 260,
+    "is_veg": false
+  },
+  {
+    "id": 192,
+    "category": "Snacks",
+    "name": "Crispy Fish",
+    "price": 265,
+    "is_veg": false
+  },
+  {
+    "id": 193,
+    "category": "Snacks",
+    "name": "Fish Szechuan Pepper",
+    "price": 270,
+    "is_veg": false
+  },
+  {
+    "id": 194,
+    "category": "Snacks",
+    "name": "Boiled Chicken",
+    "price": 230,
+    "is_veg": false
+  },
+  {
+    "id": 195,
+    "category": "Snacks",
+    "name": "Chicken Sadheko",
+    "price": 265,
+    "is_veg": false
+  },
+  {
+    "id": 196,
+    "category": "Snacks",
+    "name": "Chicken Chop (6 Piece)",
+    "price": 210,
+    "is_veg": false
+  },
+  {
+    "id": 197,
+    "category": "Snacks",
+    "name": "Chicken Spring Roll",
+    "price": 230,
+    "is_veg": false
+  },
+  {
+    "id": 198,
+    "category": "Snacks",
+    "name": "Egg Spring Roll",
+    "price": 210,
+    "is_veg": false
+  },
+  {
+    "id": 199,
+    "category": "Snacks",
+    "name": "Chicken Mini Kievs With Apple Sauce",
+    "price": 280,
+    "is_veg": false
+  }
 ]
