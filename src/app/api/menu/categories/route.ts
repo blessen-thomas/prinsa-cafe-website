@@ -38,8 +38,17 @@ export async function GET() {
       return await getFallbackCategories();
     }
 
+    console.log(
+      '[categories/GET] supabaseUrl present:',
+      !!supabaseUrl,
+      '| supabaseKey present:',
+      !!supabaseKey
+    );
+
     const { createAdminClient } = await import('@/lib/supabase/admin');
     const supabase = createAdminClient();
+
+    console.log('[categories/GET] querying categories table');
 
     const { data, error } = await supabase
       .from('categories')
@@ -47,13 +56,37 @@ export async function GET() {
       .eq('is_visible', true)
       .order('sort_order', { ascending: true });
 
+    console.log(
+      '[categories/GET] rows returned:',
+      data?.length ?? 'null',
+      '| error:',
+      JSON.stringify(error)
+    );
+
     if (error) {
-      console.warn('Supabase query failed, falling back to JSON:', error);
-      return await getFallbackCategories();
+      console.error('[categories/GET] Supabase query failed:', error);
+
+      return NextResponse.json(
+        {
+          success: false,
+          error: error.message,
+          code: error.code,
+          hint: error.hint,
+          details: error.details,
+        },
+        { status: 500 }
+      );
     }
     return NextResponse.json({ success: true, data: data || [] });
-  } catch (error) {
-    console.error('Categories API error:', error);
-    return await getFallbackCategories();
+  } catch (error: any) {
+    console.error('[categories/GET] caught error:', error);
+
+    return NextResponse.json(
+      {
+        success: false,
+        error: error?.message || String(error),
+      },
+      { status: 500 }
+    );
   }
 }
