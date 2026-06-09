@@ -22,10 +22,10 @@ async function getFallbackCategories() {
       updated_at: new Date().toISOString(),
     }));
     
-    return NextResponse.json({ success: true, data: categories });
+    return NextResponse.json({ success: true, source: "MENU_JSON_FALLBACK", data: categories });
   } catch (e) {
     console.error('Fallback categories error:', e);
-    return NextResponse.json({ success: true, data: [] });
+    return NextResponse.json({ success: true, source: "MENU_JSON_FALLBACK", data: [] });
   }
 }
 
@@ -77,7 +77,7 @@ export async function GET() {
         { status: 500 }
       );
     }
-    return NextResponse.json({ success: true, data: data || [] });
+    return NextResponse.json({ success: true, source: "SUPABASE", data: data || [] });
   } catch (error: any) {
     console.error('[categories/GET] caught error:', error);
 

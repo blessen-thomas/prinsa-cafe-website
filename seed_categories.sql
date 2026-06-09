@@ -1,0 +1,20 @@
+INSERT INTO categories (id, name, slug, description, sort_order, is_visible) VALUES 
+('breakfast', 'Breakfast', 'breakfast', '', 0, true),
+('pasta', 'Pasta', 'pasta', '', 1, true),
+('pizza', 'Pizza', 'pizza', '', 2, true),
+('burger', 'Burger', 'burger', '', 3, true),
+('sandwich', 'Sandwich', 'sandwich', '', 4, true),
+('fry-rice', 'Fry Rice', 'fry-rice', '', 5, true),
+('noodles', 'Noodles', 'noodles', '', 6, true),
+('momo', 'Momo', 'momo', '', 7, true),
+('grilled', 'Grilled', 'grilled', '', 8, true),
+('sizzler', 'Sizzler', 'sizzler', '', 9, true),
+('cutlet', 'Cutlet', 'cutlet', '', 10, true),
+('salad', 'Salad', 'salad', '', 11, true),
+('chop-suey', 'Chop Suey', 'chop-suey', '', 12, true),
+('soup', 'Soup', 'soup', '', 13, true),
+('thukpa', 'Thukpa', 'thukpa', '', 14, true),
+('chatamari', 'Chatamari', 'chatamari', '', 15, true),
+('curry-with-plain-rice', 'Curry With Plain Rice', 'curry-with-plain-rice', '', 16, true),
+('snacks', 'Snacks', 'snacks', '', 17, true)
+ON CONFLICT (id) DO UPDATE SET name = EXCLUDED.name, slug = EXCLUDED.slug, sort_order = EXCLUDED.sort_order;
