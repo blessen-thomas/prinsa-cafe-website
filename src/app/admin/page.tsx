@@ -48,11 +48,11 @@ export default function AdminDashboard() {
       </div>
 
       {loading ? (
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {[...Array(4)].map((_, i) => <div key={i} className="h-36 bg-dark-card rounded-2xl skeleton" />)}
         </div>
       ) : (
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           <StatCard icon={UtensilsCrossed} label="Total Dishes" value={s.dishes} sub={`${s.categories} categories`} color="bg-gold-400/10 text-gold-400" />
           <StatCard icon={Star} label="Reviews" value={s.reviews_total} sub={s.reviews_pending > 0 ? `${s.reviews_pending} pending approval` : 'All approved'} color="bg-burgundy-800/20 text-burgundy-400" />
           <StatCard icon={ImageIcon} label="Gallery Images" value={s.gallery_images} color="bg-coffee-500/10 text-coffee-300" />
@@ -65,7 +65,7 @@ export default function AdminDashboard() {
           <Clock className="w-5 h-5 text-gold-400" />
           <h3 className="font-heading text-lg font-semibold text-cream">Quick Links</h3>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
           {[
             { href: '/admin/menu', label: '+ Add Dish' },
             { href: '/admin/gallery', label: '+ Upload Photo' },
@@ -79,7 +79,7 @@ export default function AdminDashboard() {
               href={link.href}
               target={link.external ? '_blank' : undefined}
               rel={link.external ? 'noopener noreferrer' : undefined}
-              className="px-4 py-2.5 rounded-xl bg-dark text-cream/70 hover:text-cream hover:bg-dark-lighter text-sm transition-colors border border-white/5 text-center"
+              className="px-4 py-3 rounded-xl bg-dark text-cream/70 hover:text-cream hover:bg-dark-lighter text-sm transition-colors border border-white/5 text-center break-words min-w-0"
             >
               {link.label}
             </a>
