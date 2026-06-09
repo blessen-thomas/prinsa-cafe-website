@@ -22,7 +22,15 @@ export default function MenuPage() {
       fetch('/api/menu/categories').then((r) => r.json()),
     ])
       .then(([menuRes, catRes]) => {
-        if (menuRes.data) setDishes(menuRes.data);
+        if (menuRes.data) {
+          // Normalize: Supabase joins return 'categories' (plural); local fallback returns 'category' (singular).
+          // Ensure d.category is always set so the filter works regardless of source.
+          const normalized = menuRes.data.map((d: any) => ({
+            ...d,
+            category: d.category ?? d.categories ?? undefined,
+          }));
+          setDishes(normalized);
+        }
         if (catRes.data) setCategories(catRes.data);
       })
       .catch(() => {})

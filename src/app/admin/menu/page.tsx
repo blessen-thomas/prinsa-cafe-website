@@ -25,7 +25,16 @@ export default function AdminMenuPage() {
       ]);
       const d = await dRes.json();
       const c = await cRes.json();
-      if (d.data) setDishes(d.data);
+      if (d.data) {
+        // Normalize: ensure both 'category' and 'categories' keys are populated
+        // regardless of whether data came from Supabase or the local JSON fallback.
+        const normalized = d.data.map((dish: any) => ({
+          ...dish,
+          categories: dish.categories ?? (dish.category ? { name: dish.category, slug: dish.category_id } : undefined),
+          category: dish.category ?? dish.categories ?? undefined,
+        }));
+        setDishes(normalized);
+      }
       if (c.data) setCategories(c.data);
     } finally {
       setLoading(false);
