@@ -15,7 +15,7 @@ async function getFallbackMenu(search: string | null, category: string | null, f
       price: d.price,
       category_id: d.category.toLowerCase().replace(/[\s/]+/g, '-'),
       image_url: d.image,
-      is_veg: d.isVeg,
+      is_veg: d.is_veg ?? d.isVeg ?? false,
       is_featured: false,
       is_available: true,
       sort_order: d.id,

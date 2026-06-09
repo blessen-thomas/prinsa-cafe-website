@@ -30,7 +30,7 @@ export async function GET() {
         price: d.price,
         category_id: d.category?.toLowerCase().replace(/[\s/]+/g, '-') || 'default',
         image_url: d.image,
-        is_veg: d.isVeg ?? d.is_veg,
+        is_veg: d.is_veg ?? d.isVeg ?? false,
         is_featured: d.is_featured || false,
         is_available: d.is_available !== false,
         sort_order: d.id,
@@ -79,7 +79,7 @@ export async function POST(request: Request) {
         price: insertData.price,
         description: insertData.description,
         image: insertData.image_url,
-        isVeg: insertData.is_veg,
+        is_veg: insertData.is_veg,
         is_featured: insertData.is_featured,
         is_available: insertData.is_available
       };
@@ -114,7 +114,7 @@ export async function PATCH(request: Request) {
         if (updates.price !== undefined) rawData[index].price = updates.price;
         if (updates.description !== undefined) rawData[index].description = updates.description;
         if (updates.image_url !== undefined) rawData[index].image = updates.image_url;
-        if (updates.is_veg !== undefined) rawData[index].isVeg = updates.is_veg;
+        if (updates.is_veg !== undefined) rawData[index].is_veg = updates.is_veg;
         if (updates.is_featured !== undefined) rawData[index].is_featured = updates.is_featured;
         if (updates.is_available !== undefined) rawData[index].is_available = updates.is_available;
         await saveLocalData(rawData);
