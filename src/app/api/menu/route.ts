@@ -60,8 +60,11 @@ export async function GET(request: Request) {
       return await getFallbackMenu(search, category, featured);
     }
 
+    console.log('[menu/GET] supabaseUrl present:', !!supabaseUrl, '| supabaseKey present:', !!supabaseKey);
     const { createAdminClient } = await import('@/lib/supabase/admin');
     const supabase = createAdminClient();
+
+    console.log('[menu/GET] building query — featured:', featured, '| category:', category, '| search:', search);
 
     let query = supabase
       .from('dishes')
@@ -76,12 +79,23 @@ export async function GET(request: Request) {
     }
     if (search) query = query.ilike('name', `%${search}%`);
 
+    // NOTE: this filter hides rows where is_available IS NULL or false
     query = query.eq('is_available', true);
+    console.log('[menu/GET] applying is_available=true filter');
 
     const { data: dishes, error } = await query;
+    console.log('[menu/GET] rows returned:', dishes?.length ?? 'null', '| error:', JSON.stringify(error));
+
     if (error) {
-      console.warn('Supabase query failed, falling back to JSON:', error);
-      return await getFallbackMenu(search, category, featured);
+      console.error('[menu/GET] Supabase query error — NOT falling back silently:', error);
+      return NextResponse.json(
+        {
+          success: false,
+          error: error.message,
+          details: { code: error.code, hint: error.hint, details: error.details },
+        },
+        { status: 500 }
+      );
     }
 
     // Get average ratings
@@ -119,9 +133,15 @@ export async function GET(request: Request) {
     }));
 
     return NextResponse.json({ success: true, data: enriched });
-  } catch (error) {
-    console.error('Menu API error:', error);
-    const url = new URL(request.url);
-    return await getFallbackMenu(url.searchParams.get('search'), url.searchParams.get('category'), url.searchParams.get('featured'));
+  } catch (error: any) {
+    console.error('[menu/GET] caught error:', error);
+    return NextResponse.json(
+      {
+        success: false,
+        error: error?.message || String(error),
+        details: { name: error?.name, code: error?.code, hint: error?.hint },
+      },
+      { status: 500 }
+    );
   }
 }

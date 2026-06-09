@@ -45,19 +45,30 @@ export async function GET() {
       return NextResponse.json({ success: true, data: dishes });
     }
 
+    console.log('[admin/menu/GET] importing createAdminClient...');
     const { createAdminClient } = await import('@/lib/supabase/admin');
     const supabase = createAdminClient();
+    console.log('[admin/menu/GET] running query on dishes table...');
 
     const { data, error } = await supabase
       .from('dishes')
-      .select('*, categories(name)')
-      .order('categories(sort_order)')
-      .order('sort_order');
-      
+      .select('*, categories(name, slug)')
+      .order('sort_order', { ascending: true })
+      .order('name', { ascending: true });
+
+    console.log('[admin/menu/GET] rows returned:', data?.length ?? 'null', '| error:', error);
     if (error) throw error;
     return NextResponse.json({ success: true, data });
-  } catch (error) {
-    return NextResponse.json({ success: false, error: 'Failed to fetch' }, { status: 500 });
+  } catch (error: any) {
+    console.error('[admin/menu/GET] caught error:', error);
+    return NextResponse.json(
+      {
+        success: false,
+        error: error?.message || String(error),
+        details: { name: error?.name, code: error?.code, hint: error?.hint },
+      },
+      { status: 500 }
+    );
   }
 }
 
