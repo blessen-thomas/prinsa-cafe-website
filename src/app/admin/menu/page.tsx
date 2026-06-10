@@ -181,7 +181,7 @@ export default function AdminMenuPage() {
               <div key={dish.id} className="bg-dark-card rounded-2xl border border-white/5 p-4 flex flex-col gap-3 relative">
                 <div className="flex justify-between items-start gap-4">
                   <div>
-                    <h3 className="font-medium text-cream text-base">{dish.name}</h3>
+                    <div className="font-heading font-bold text-gold-400 text-lg">{dish.name}</div>
                     <p className="text-sm text-warm-gray">{(dish as any).categories?.name || '-'}</p>
                   </div>
                   <span className="font-medium text-cream whitespace-nowrap">₹{dish.price}</span>
