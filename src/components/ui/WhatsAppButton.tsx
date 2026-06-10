@@ -2,10 +2,16 @@
 
 import { motion } from 'framer-motion';
 import { SITE_CONFIG } from '@/lib/constants';
+import { usePathname } from 'next/navigation';
 
 export default function WhatsAppButton() {
+  const pathname = usePathname();
   const message = encodeURIComponent("Hi! I'd like to know more about Prinsa Café");
   const url = `https://wa.me/${SITE_CONFIG.whatsapp}?text=${message}`;
+
+  if (pathname.startsWith('/admin')) {
+    return null;
+  }
 
   return (
     <motion.a
