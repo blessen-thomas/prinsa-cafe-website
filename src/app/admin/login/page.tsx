@@ -14,6 +14,8 @@ export default function AdminLoginPage() {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
+  console.log('Login Page: NEXT_PUBLIC_SUPABASE_URL=', process.env.NEXT_PUBLIC_SUPABASE_URL);
+
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
