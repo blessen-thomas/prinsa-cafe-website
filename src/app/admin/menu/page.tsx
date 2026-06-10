@@ -178,7 +178,7 @@ export default function AdminMenuPage() {
           {/* Mobile Cards View */}
           <div className="grid grid-cols-1 gap-4 md:hidden">
             {dishes.map((dish) => (
-              <div key={dish.id} className="bg-dark-card rounded-2xl border border-white/5 p-4 flex flex-col gap-3 relative">
+              <div key={dish.id} className="bg-dark-card rounded-2xl border border-[#3D3030] p-4 flex flex-col gap-3 relative">
                 <div className="flex justify-between items-start gap-4">
                   <div>
                     <div className="font-heading font-bold text-gold-400 text-lg">{dish.name}</div>
