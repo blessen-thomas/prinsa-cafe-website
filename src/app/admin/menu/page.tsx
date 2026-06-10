@@ -1,7 +1,7 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { Plus, Edit2, Trash2 } from 'lucide-react';
+import { useEffect, useState, useMemo } from 'react';
+import { Plus, Edit2, Trash2, Search } from 'lucide-react';
 import LoadingSpinner from '@/components/ui/LoadingSpinner';
 import Button from '@/components/ui/Button';
 import type { Dish, Category } from '@/lib/types';
@@ -16,6 +16,17 @@ export default function AdminMenuPage() {
   const [form, setForm] = useState(defaultForm);
   const [file, setFile] = useState<File | null>(null);
   const [submitting, setSubmitting] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const filteredDishes = useMemo(() => {
+    if (!searchQuery.trim()) return dishes;
+    const lowerQuery = searchQuery.toLowerCase();
+    return dishes.filter((dish) => {
+      const categoryName = ((dish as any).categories?.name || '').toLowerCase();
+      const dishName = dish.name.toLowerCase();
+      return dishName.includes(lowerQuery) || categoryName.includes(lowerQuery);
+    });
+  }, [dishes, searchQuery]);
 
   const fetchData = async () => {
     try {
@@ -111,14 +122,26 @@ export default function AdminMenuPage() {
 
   return (
     <div>
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0 mb-8">
+      <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 lg:gap-0 mb-8">
         <div>
           <h1 className="font-heading text-3xl font-bold text-cream">Menu Management</h1>
           <p className="text-warm-gray mt-1">Manage dishes and categories</p>
         </div>
-        <Button onClick={() => { setForm(defaultForm); setShowForm(!showForm); }} variant="primary" icon={<Plus className="w-4 h-4" />}>
-          Add Dish
-        </Button>
+        <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center w-full lg:w-auto">
+          <div className="relative w-full sm:w-auto">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-warm-gray" />
+            <input
+              type="text"
+              placeholder="Search dishes..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="pl-9 pr-4 py-2 rounded-xl bg-dark-card border border-white/10 text-cream text-sm focus:border-gold-400 focus:ring-1 focus:ring-gold-400 outline-none transition-colors w-full sm:w-64"
+            />
+          </div>
+          <Button onClick={() => { setForm(defaultForm); setShowForm(!showForm); }} variant="primary" className="w-full sm:w-auto" icon={<Plus className="w-4 h-4" />}>
+            Add Dish
+          </Button>
+        </div>
       </div>
 
       {showForm && (
@@ -175,9 +198,13 @@ export default function AdminMenuPage() {
         <LoadingSpinner />
       ) : (
         <>
+          <div className="mb-4 text-sm text-warm-gray">
+            Showing {filteredDishes.length} of {dishes.length} dishes
+          </div>
+
           {/* Mobile Cards View */}
           <div className="grid grid-cols-1 gap-4 md:hidden">
-            {dishes.map((dish) => (
+            {filteredDishes.map((dish) => (
               <div key={dish.id} className="bg-dark-card rounded-2xl border border-[#3D3030] p-4 flex flex-col gap-3 relative">
                 <div className="flex justify-between items-start gap-4">
                   <div>
@@ -218,7 +245,7 @@ export default function AdminMenuPage() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/5 text-cream/90">
-                {dishes.map((dish) => (
+                {filteredDishes.map((dish) => (
                   <tr key={dish.id} className="hover:bg-white/[0.02]">
                     <td className="p-4 font-medium">{dish.name}</td>
                     <td className="p-4">{(dish as any).categories?.name || '-'}</td>
