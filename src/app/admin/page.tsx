@@ -27,9 +27,9 @@ const StatCard = ({ icon: Icon, label, value, sub, color, href }: StatCardProps)
     href={href}
     id={`stat-card-${label.toLowerCase().replace(/\s+/g, '-')}`}
     className={[
-      'group block bg-dark-card rounded-2xl p-6 border border-white/5',
-      'transition-all duration-200',
-      'hover:border-white/15 hover:bg-dark-card/80 hover:shadow-lg hover:-translate-y-0.5',
+      'group block bg-[#3A2C29] rounded-2xl p-6 border border-white/10 shadow-sm',
+      'transition-all duration-300',
+      'hover:border-white/20 hover:bg-[#453430] hover:shadow-xl hover:shadow-black/40 hover:-translate-y-1',
       'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-400 focus-visible:ring-offset-2 focus-visible:ring-offset-dark',
       'active:scale-[0.98] active:shadow-none',
     ].join(' ')}
@@ -64,27 +64,27 @@ export default function AdminDashboard() {
   return (
     <div>
       <div className="mb-8">
-        <h1 className="font-heading text-3xl font-bold text-cream">Dashboard</h1>
+        <h1 className="font-heading text-3xl font-bold text-[#F5E6C8]">Dashboard</h1>
         <p className="text-warm-gray mt-1">Welcome back to Prinsa Café Admin</p>
       </div>
 
       {loading ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {[...Array(4)].map((_, i) => <div key={i} className="h-36 bg-dark-card rounded-2xl skeleton" />)}
+          {[...Array(4)].map((_, i) => <div key={i} className="h-36 bg-[#3A2C29] rounded-2xl skeleton border border-white/10 shadow-sm" />)}
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-          <StatCard icon={UtensilsCrossed} label="Total Dishes" value={s.dishes} sub={`${s.categories} categories`} color="bg-gold-400/10 text-gold-400" href="/admin/menu" />
-          <StatCard icon={Star} label="Reviews" value={s.reviews_total} sub={s.reviews_pending > 0 ? `${s.reviews_pending} pending approval` : 'All approved'} color="bg-burgundy-800/20 text-burgundy-400" href="/admin/reviews" />
-          <StatCard icon={ImageIcon} label="Gallery Images" value={s.gallery_images} color="bg-coffee-500/10 text-coffee-300" href="/admin/gallery" />
-          <StatCard icon={MessageSquare} label="Messages" value={s.unread_messages} sub="unread" color="bg-green-500/10 text-green-400" href="/admin/messages" />
+          <StatCard icon={UtensilsCrossed} label="Total Dishes" value={s.dishes} sub={`${s.categories} categories`} color="bg-gold-400/20 text-gold-300" href="/admin/menu" />
+          <StatCard icon={Star} label="Reviews" value={s.reviews_total} sub={s.reviews_pending > 0 ? `${s.reviews_pending} pending approval` : 'All approved'} color="bg-burgundy-600/20 text-burgundy-300" href="/admin/reviews" />
+          <StatCard icon={ImageIcon} label="Gallery Images" value={s.gallery_images} color="bg-coffee-500/20 text-coffee-200" href="/admin/gallery" />
+          <StatCard icon={MessageSquare} label="Messages" value={s.unread_messages} sub="unread" color="bg-green-500/20 text-green-300" href="/admin/messages" />
         </div>
       )}
 
-      <div className="bg-dark-card rounded-2xl p-6 border border-white/5">
+      <div className="bg-[#3A2C29] rounded-2xl p-6 border border-white/10 shadow-md">
         <div className="flex items-center gap-3 mb-4">
           <Clock className="w-5 h-5 text-gold-400" />
-          <h3 className="font-heading text-lg font-semibold text-cream">Quick Links</h3>
+          <h3 className="font-heading text-lg font-semibold text-[#F5E6C8]">Quick Links</h3>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
           {[
@@ -100,7 +100,7 @@ export default function AdminDashboard() {
               href={link.href}
               target={link.external ? '_blank' : undefined}
               rel={link.external ? 'noopener noreferrer' : undefined}
-              className="px-4 py-3 rounded-xl bg-dark text-cream/70 hover:text-cream hover:bg-dark-lighter text-sm transition-colors border border-white/5 text-center break-words min-w-0"
+              className="px-4 py-3 rounded-xl bg-burgundy-900/50 text-cream/90 hover:text-[#F5E6C8] hover:bg-burgundy-800 text-sm transition-all border border-burgundy-800/60 hover:border-burgundy-600 hover:shadow-[0_0_15px_rgba(201,39,85,0.3)] text-center break-words min-w-0 font-medium"
             >
               {link.label}
             </a>

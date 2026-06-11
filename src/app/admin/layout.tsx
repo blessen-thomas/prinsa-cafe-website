@@ -67,7 +67,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   if (!authorized) return null;
 
   return (
-    <div className="min-h-screen bg-dark flex">
+    <div className="min-h-screen bg-[#281D1A] flex">
       <AdminSidebar />
       <main className="flex-1 p-4 md:p-8 pt-20 md:pt-8 overflow-auto">
         {children}
