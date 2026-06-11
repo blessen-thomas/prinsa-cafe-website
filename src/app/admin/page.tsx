@@ -27,7 +27,7 @@ const StatCard = ({ icon: Icon, label, value, sub, color, href }: StatCardProps)
     href={href}
     id={`stat-card-${label.toLowerCase().replace(/\s+/g, '-')}`}
     className={[
-      'group block bg-[#2B1D1A] rounded-2xl p-6 border border-white/5 shadow-sm',
+      'group block bg-[#2B1D1A] rounded-2xl p-6 border border-[rgba(255,255,255,0.08)] shadow-sm',
       'transition-all duration-300',
       'hover:border-white/15 hover:bg-[#32231F] hover:shadow-xl hover:shadow-black/40 hover:-translate-y-1',
       'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-400 focus-visible:ring-offset-2 focus-visible:ring-offset-dark',
@@ -70,7 +70,7 @@ export default function AdminDashboard() {
 
       {loading ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {[...Array(4)].map((_, i) => <div key={i} className="h-36 bg-[#2B1D1A] rounded-2xl skeleton border border-white/5 shadow-sm" />)}
+          {[...Array(4)].map((_, i) => <div key={i} className="h-36 bg-[#2B1D1A] rounded-2xl skeleton border border-[rgba(255,255,255,0.08)] shadow-sm" />)}
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
@@ -81,7 +81,7 @@ export default function AdminDashboard() {
         </div>
       )}
 
-      <div className="bg-[#2B1D1A] rounded-2xl p-6 border border-white/5 shadow-sm">
+      <div className="bg-[#2B1D1A] rounded-2xl p-6 border border-[rgba(255,255,255,0.08)] shadow-sm">
         <div className="flex items-center gap-3 mb-4">
           <Clock className="w-5 h-5 text-[#D4AF37]" />
           <h3 className="font-heading text-lg font-semibold text-[#F8F4E9]">Quick Links</h3>
@@ -100,7 +100,7 @@ export default function AdminDashboard() {
               href={link.href}
               target={link.external ? '_blank' : undefined}
               rel={link.external ? 'noopener noreferrer' : undefined}
-              className="px-4 py-3 rounded-xl bg-[#8B0029]/20 text-[#F8F4E9] hover:text-white hover:bg-[#8B0029]/40 text-sm transition-all border border-[#8B0029]/30 hover:border-[#8B0029]/60 hover:shadow-[0_0_12px_rgba(139,0,41,0.2)] text-center break-words min-w-0 font-medium"
+              className="px-4 py-3 rounded-xl bg-[#8B0029] text-[#F8F4E9] hover:text-white hover:bg-[#A00032] text-sm transition-colors text-center break-words min-w-0 font-medium"
             >
               {link.label}
             </a>

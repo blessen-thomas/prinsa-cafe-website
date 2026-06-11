@@ -77,7 +77,7 @@ export default function AdminSidebar() {
   return (
     <>
       {/* Mobile toggle */}
-      <div className="md:hidden fixed top-0 left-0 right-0 z-40 bg-[#150D0A] p-4 flex items-center justify-between border-b border-white/10">
+      <div className="md:hidden fixed top-0 left-0 right-0 z-40 bg-[#140B09] p-4 flex items-center justify-between border-b border-[rgba(255,255,255,0.08)]">
         <div className="flex items-center gap-2">
           <Image src="/images/logo.png" alt="" width={28} height={28} className="rounded-full" />
           <span className="text-[#F8F4E9] font-heading text-sm font-semibold">Admin</span>
@@ -93,12 +93,12 @@ export default function AdminSidebar() {
       )}
 
       {/* Mobile sidebar */}
-      <div className={`fixed top-0 left-0 bottom-0 w-64 bg-[#150D0A] z-40 md:hidden flex flex-col transform transition-transform ${mobileOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+      <div className={`fixed top-0 left-0 bottom-0 w-64 bg-[#140B09] z-40 md:hidden flex flex-col transform transition-transform ${mobileOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         {sidebarContent}
       </div>
 
       {/* Desktop sidebar */}
-      <div className="hidden md:flex flex-col admin-sidebar bg-[#150D0A] border-r border-white/5 shrink-0">
+      <div className="hidden md:flex flex-col admin-sidebar bg-[#140B09] border-r border-[rgba(255,255,255,0.08)] shrink-0">
         {sidebarContent}
       </div>
     </>
