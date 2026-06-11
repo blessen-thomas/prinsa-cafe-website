@@ -9,9 +9,9 @@ export const SITE_CONFIG = {
   tagline: 'Curated Flavors, Elevated Moments',
   description: 'Prinsa Café — a modern café in Bengaluru offering curated flavors, premium multi-cuisine dishes, and an elevated dining experience in a warm, welcoming atmosphere.',
   url: 'https://prinsacafe.com',
-  phone: '+917583368648',
-  phoneDisplay: '075833 68648',
-  whatsapp: '917583368648',
+  phone: '+917483368648',
+  phoneDisplay: '+91 74833 68648',
+  whatsapp: '917483368648',
   email: 'hello@prinsacafe.com',
   address: {
     street: 'Sacred Hearts Road, TC Palya',

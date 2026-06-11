@@ -283,8 +283,8 @@ CREATE POLICY "Public read logo assets"
 -- ============================================================
 INSERT INTO site_settings (key, value, type, label, "group") VALUES
   ('business_hours', '[{"day":"Monday","open":"08:00","close":"22:00","is_closed":false},{"day":"Tuesday","open":"08:00","close":"22:00","is_closed":false},{"day":"Wednesday","open":"08:00","close":"22:00","is_closed":false},{"day":"Thursday","open":"08:00","close":"22:00","is_closed":false},{"day":"Friday","open":"08:00","close":"22:00","is_closed":false},{"day":"Saturday","open":"08:00","close":"22:00","is_closed":false},{"day":"Sunday","open":"09:00","close":"22:00","is_closed":false}]', 'json', 'Business Hours', 'hours'),
-  ('whatsapp_number', '917583368648', 'text', 'WhatsApp Number', 'contact'),
-  ('phone_number', '+917583368648', 'text', 'Phone Number', 'contact'),
+  ('whatsapp_number', '917483368648', 'text', 'WhatsApp Number', 'contact'),
+  ('phone_number', '+917483368648', 'text', 'Phone Number', 'contact'),
   ('email', 'hello@prinsacafe.com', 'text', 'Email Address', 'contact'),
   ('address', 'Sacred Hearts Road, TC Palya, Krishnarajapuram, Bengaluru, Karnataka 560036', 'text', 'Address', 'contact'),
   ('instagram_url', 'https://instagram.com/prinsacafe', 'text', 'Instagram URL', 'social'),
