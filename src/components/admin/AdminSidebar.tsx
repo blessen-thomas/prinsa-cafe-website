@@ -39,8 +39,8 @@ export default function AdminSidebar() {
       <div className="p-5 border-b border-white/10 flex items-center gap-3">
         <Image src="/images/logo.png" alt="Prinsa Café" width={32} height={32} className="rounded-full" />
         <div>
-          <p className="text-cream font-heading font-semibold text-sm">Prinsa Café</p>
-          <span className="text-xs text-gold-400 bg-gold-400/10 px-2 py-0.5 rounded">Admin</span>
+          <p className="text-[#F8F4E9] font-heading font-semibold text-sm">Prinsa Café</p>
+          <span className="text-xs text-[#D4AF37] bg-[#D4AF37]/10 px-2 py-0.5 rounded">Admin</span>
         </div>
       </div>
 
@@ -52,8 +52,8 @@ export default function AdminSidebar() {
             onClick={() => setMobileOpen(false)}
             className={`flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium transition-colors ${
               isActive(link.href)
-                ? 'bg-burgundy-800 text-cream border-l-2 border-gold-400'
-                : 'text-warm-gray hover:bg-dark hover:text-cream'
+                ? 'bg-[#8B0029] text-[#F8F4E9] border-l-2 border-[#D4AF37]'
+                : 'text-[#C8B9A6] hover:bg-[#2B1D1A] hover:text-[#F8F4E9]'
             }`}
           >
             <link.icon className="w-5 h-5" />
@@ -65,7 +65,7 @@ export default function AdminSidebar() {
       <div className="p-3 border-t border-white/10">
         <button
           onClick={handleLogout}
-          className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium text-warm-gray hover:bg-red-900/20 hover:text-red-400 transition-colors w-full"
+          className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium text-[#C8B9A6] hover:bg-[#8B0029]/20 hover:text-[#F8F4E9] transition-colors w-full"
         >
           <LogOut className="w-5 h-5" />
           Logout
@@ -77,12 +77,12 @@ export default function AdminSidebar() {
   return (
     <>
       {/* Mobile toggle */}
-      <div className="md:hidden fixed top-0 left-0 right-0 z-40 bg-dark-lighter p-4 flex items-center justify-between border-b border-white/10">
+      <div className="md:hidden fixed top-0 left-0 right-0 z-40 bg-[#150D0A] p-4 flex items-center justify-between border-b border-white/10">
         <div className="flex items-center gap-2">
           <Image src="/images/logo.png" alt="" width={28} height={28} className="rounded-full" />
-          <span className="text-cream font-heading text-sm font-semibold">Admin</span>
+          <span className="text-[#F8F4E9] font-heading text-sm font-semibold">Admin</span>
         </div>
-        <button onClick={() => setMobileOpen(!mobileOpen)} className="text-cream p-1">
+        <button onClick={() => setMobileOpen(!mobileOpen)} className="text-[#F8F4E9] p-1">
           {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
@@ -93,12 +93,12 @@ export default function AdminSidebar() {
       )}
 
       {/* Mobile sidebar */}
-      <div className={`fixed top-0 left-0 bottom-0 w-64 bg-dark-lighter z-40 md:hidden flex flex-col transform transition-transform ${mobileOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+      <div className={`fixed top-0 left-0 bottom-0 w-64 bg-[#150D0A] z-40 md:hidden flex flex-col transform transition-transform ${mobileOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         {sidebarContent}
       </div>
 
       {/* Desktop sidebar */}
-      <div className="hidden md:flex flex-col admin-sidebar bg-dark-lighter border-r border-white/5 shrink-0">
+      <div className="hidden md:flex flex-col admin-sidebar bg-[#150D0A] border-r border-white/5 shrink-0">
         {sidebarContent}
       </div>
     </>
