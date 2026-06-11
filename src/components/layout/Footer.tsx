@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { MapPin, Phone, Mail, Link as LinkIcon, Map } from 'lucide-react';
+import { MapPin, Phone, Link as LinkIcon, Map } from 'lucide-react';
 import { SITE_CONFIG, NAV_LINKS, DEFAULT_BUSINESS_HOURS } from '@/lib/constants';
 
 function formatTime(t: string) {
@@ -69,12 +69,6 @@ export default function Footer() {
                 <a href={`tel:${SITE_CONFIG.phone}`} className="flex gap-3 text-sm text-warm-gray hover:text-gold-400 transition-colors">
                   <Phone className="w-4 h-4 text-gold-400 shrink-0" />
                   {SITE_CONFIG.phoneDisplay}
-                </a>
-              </li>
-              <li>
-                <a href={`mailto:${SITE_CONFIG.email}`} className="flex gap-3 text-sm text-warm-gray hover:text-gold-400 transition-colors">
-                  <Mail className="w-4 h-4 text-gold-400 shrink-0" />
-                  {SITE_CONFIG.email}
                 </a>
               </li>
             </ul>

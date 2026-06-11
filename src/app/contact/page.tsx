@@ -1,6 +1,6 @@
 'use client';
 
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Clock } from 'lucide-react';
 import SectionHeader from '@/components/ui/SectionHeader';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import ContactForm from '@/components/contact/ContactForm';
@@ -47,19 +47,6 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-2xl p-6 shadow-md">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-xl bg-coffee-100 shrink-0">
-                    <Mail className="w-6 h-6 text-coffee-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-heading font-semibold text-coffee-800 mb-1">Email</h4>
-                    <a href={`mailto:${SITE_CONFIG.email}`} className="text-burgundy-800 hover:text-burgundy-600 font-medium">
-                      {SITE_CONFIG.email}
-                    </a>
-                  </div>
-                </div>
-              </div>
 
               <div className="bg-white rounded-2xl p-6 shadow-md">
                 <div className="flex items-center gap-3 mb-4">

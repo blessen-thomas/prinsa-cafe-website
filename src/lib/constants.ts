@@ -12,7 +12,6 @@ export const SITE_CONFIG = {
   phone: '+917483368648',
   phoneDisplay: '+91 74833 68648',
   whatsapp: '917483368648',
-  email: 'hello@prinsacafe.com',
   address: {
     street: 'Sacred Hearts Road, TC Palya',
     area: 'Krishnarajapuram',
